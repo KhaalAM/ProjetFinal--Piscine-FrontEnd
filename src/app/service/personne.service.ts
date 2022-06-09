@@ -12,7 +12,7 @@ export class PersonneService {
   constructor(private httpClient:HttpClient) { }
 
   getAllPersonnes():Observable<Personne[]>{
-    return this.httpClient.get<Personne[]>(environment.urlE+"personnes")
+    return this.httpClient.get<Personne[]>(environment.urlE+"personnes")// !!! Verifier les url avec le back !!!
   }
 
   addPersonne(personne:Personne):Observable<Personne>{
