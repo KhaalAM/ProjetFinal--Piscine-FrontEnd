@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
+import { ChangeDetectorRef, Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProjetFinal--Piscine-FrontEnd';
+  showFiller = false;
+
 }
+
+
+
+
+
+
+
+
