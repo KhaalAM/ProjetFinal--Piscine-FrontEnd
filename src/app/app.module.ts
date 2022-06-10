@@ -38,7 +38,6 @@ import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-p
     InscriptionPlongeeComponent,
     
 
-
   ],
   imports: [
     BrowserModule,
@@ -54,6 +53,7 @@ import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-p
 
     
     
+
   ],
   
   providers: [],
