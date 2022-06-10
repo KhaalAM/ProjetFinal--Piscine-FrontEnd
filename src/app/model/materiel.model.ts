@@ -1,5 +1,5 @@
 export class Materiel {
   idMateriel!:number
-  nom!:string
-  quantite!:number
+  nomMateriel!:string
+  qtMateriel!:number
 }

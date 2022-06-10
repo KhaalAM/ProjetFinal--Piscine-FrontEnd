@@ -1,7 +1,8 @@
-export class Activites {
+export class Activite {
   idActivite!:number
-  nom!:string
+  nomActivite!:string
   nbrPlaces!:number
   horaireDebut!:Date
   horaireFin!:Date
+  prix!: number
 }
