@@ -8,6 +8,9 @@ import { ActiviteesComponent } from './activitees/activitees.component';
 import { ContactComponent } from './contact/contact.component';
 import { HorairesComponent } from './horaires/horaires.component';
 import { FicheInscriptionClientComponent } from './fiche-inscription-client/fiche-inscription-client.component';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { InscriptionActiviteComponent } from './inscription-activite/inscription-activite.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FicheInscriptionClientComponent } from './fiche-inscription-client/fich
     ActiviteesComponent,
     ContactComponent,
     HorairesComponent,
-    FicheInscriptionClientComponent
+    FicheInscriptionClientComponent,
+    LoginComponent,
+    PageNotFoundComponent,
+    InscriptionActiviteComponent
   ],
   imports: [
     BrowserModule,
