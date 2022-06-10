@@ -25,7 +25,7 @@ export class MaterielService {
   }
 
   updateMateriel(materiel:Materiel):Observable<Materiel>{
-    return this.httpClient.put<Materiel>(environment.urlE + "updateEquipment", materiel)  // !!! Verifier la fonction avec le back !!!
+    return this.httpClient.put<Materiel>(environment.urlE + "updateEquipment", materiel)
   }
 
   getMaterielById(id:number):Observable<Materiel>{

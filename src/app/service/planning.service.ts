@@ -25,7 +25,7 @@ export class PlanningService {
   }
 
   updatePlanning(planning:Planning):Observable<Planning>{
-    return this.httpClient.put<Planning>(environment.urlE + "updateSchedule", planning)  // !!! Verifier la fonction avec le back !!!
+    return this.httpClient.put<Planning>(environment.urlE + "updateSchedule", planning)
   }
 
   getPlanningById(id:number):Observable<Planning>{

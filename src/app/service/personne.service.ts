@@ -24,7 +24,7 @@ export class PersonneService {
   }
 
   updatePersonne(personne:Personne):Observable<Personne>{
-    return this.httpClient.put<Personne>(environment.urlE + "updatePerson", personne)  // !!! Verifier la fonction avec le back !!!
+    return this.httpClient.put<Personne>(environment.urlE + "updatePerson", personne)
   }
 
   getPersonneById(id:number):Observable<Personne>{

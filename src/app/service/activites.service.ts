@@ -12,7 +12,7 @@ export class ActivitesService {
   constructor(private httpClient:HttpClient) { }
 
   getAllActivites():Observable<Activites[]>{
-    return this.httpClient.get<Activites[]>(environment.urlE+"listActivitys")
+    return this.httpClient.get<Activites[]>(environment.urlE+"listActivities")
   }
 
   addActivites(activites:Activites):Observable<Activites>{
@@ -24,7 +24,7 @@ export class ActivitesService {
   }
 
   updateActivites(activites:Activites):Observable<Activites>{
-    return this.httpClient.put<Activites>(environment.urlE + "updateActivity", activites) // !!! Verifier la fonction avec le back !!!
+    return this.httpClient.put<Activites>(environment.urlE + "updateActivity", activites)
   }
 
   getActivitesById(id:number):Observable<Activites>{
