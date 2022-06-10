@@ -7,7 +7,7 @@ import { Activite } from '../model/activite.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ActivitesService {
+export class ActiviteService {
 
   constructor(private httpClient:HttpClient) { }
 
