@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment';
+
+import {  Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,14 @@ import { environment } from 'src/environments/environment';
 })
 export class AppComponent {
   title = 'ProjetFinal--Piscine-FrontEnd';
- 
- 
+
+  showFiller = false;
 }
+
+
+
+
+
+
+
+
