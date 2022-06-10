@@ -12,22 +12,22 @@ export class PersonneService {
   constructor(private httpClient:HttpClient) { }
 
   getAllPersonnes():Observable<Personne[]>{
-    return this.httpClient.get<Personne[]>(environment.urlE+"personnes")// !!! Verifier les url avec le back !!!
+    return this.httpClient.get<Personne[]>(environment.urlE+"listPersons")
   }
 
   addPersonne(personne:Personne):Observable<Personne>{
-    return this.httpClient.post<Personne>(environment.urlE + "savePersonne", personne)
+    return this.httpClient.post<Personne>(environment.urlE + "savePerson", personne)
   }
 
   deletePersonne(id:number):Observable<void>{
-    return this.httpClient.delete<void>(environment.urlE+"delete/"+id)
+    return this.httpClient.delete<void>(environment.urlE+"deletePerson/"+id)
   }
 
   updatePersonne(personne:Personne):Observable<Personne>{
-    return this.httpClient.put<Personne>(environment.urlE + "updatePersonne", personne)
+    return this.httpClient.put<Personne>(environment.urlE + "updatePerson", personne)  // !!! Verifier la fonction avec le back !!!
   }
 
   getPersonneById(id:number):Observable<Personne>{
-    return this.httpClient.get<Personne>(environment.urlE+"personne/"+id)
+    return this.httpClient.get<Personne>(environment.urlE+"getPerson/"+id)
   }
 }

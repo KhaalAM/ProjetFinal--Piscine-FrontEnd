@@ -11,23 +11,23 @@ export class ActivitesService {
 
   constructor(private httpClient:HttpClient) { }
 
-  getAllActivitess():Observable<Activites[]>{
-    return this.httpClient.get<Activites[]>(environment.urlE+"activitess")// !!! Verifier les url avec le back !!!
+  getAllActivites():Observable<Activites[]>{
+    return this.httpClient.get<Activites[]>(environment.urlE+"listActivitys")
   }
 
   addActivites(activites:Activites):Observable<Activites>{
-    return this.httpClient.post<Activites>(environment.urlE + "saveActivites", activites)
+    return this.httpClient.post<Activites>(environment.urlE + "saveActivity", activites)
   }
 
   deleteActivites(id:number):Observable<void>{
-    return this.httpClient.delete<void>(environment.urlE+"delete/"+id)
+    return this.httpClient.delete<void>(environment.urlE+"deleteActivity/"+id)
   }
 
   updateActivites(activites:Activites):Observable<Activites>{
-    return this.httpClient.put<Activites>(environment.urlE + "updateActivites", activites)
+    return this.httpClient.put<Activites>(environment.urlE + "updateActivity", activites) // !!! Verifier la fonction avec le back !!!
   }
 
   getActivitesById(id:number):Observable<Activites>{
-    return this.httpClient.get<Activites>(environment.urlE+"activites/"+id)
+    return this.httpClient.get<Activites>(environment.urlE+"getActivity/"+id)
   }
 }

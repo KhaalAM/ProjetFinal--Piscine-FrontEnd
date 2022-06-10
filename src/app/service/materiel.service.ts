@@ -13,22 +13,22 @@ export class MaterielService {
   constructor(private httpClient:HttpClient) { }
 
   getAllMateriels():Observable<Materiel[]>{
-    return this.httpClient.get<Materiel[]>(environment.urlE+"materiels")// !!! Verifier les url avec le back !!!
+    return this.httpClient.get<Materiel[]>(environment.urlE+"listEquipments")
   }
 
   addMateriel(materiel:Materiel):Observable<Materiel>{
-    return this.httpClient.post<Materiel>(environment.urlE + "saveMateriel", materiel)
+    return this.httpClient.post<Materiel>(environment.urlE + "saveEquipment", materiel)
   }
 
   deleteMateriel(id:number):Observable<void>{
-    return this.httpClient.delete<void>(environment.urlE+"delete/"+id)
+    return this.httpClient.delete<void>(environment.urlE+"deleteEquipment/"+id)
   }
 
   updateMateriel(materiel:Materiel):Observable<Materiel>{
-    return this.httpClient.put<Materiel>(environment.urlE + "updateMateriel", materiel)
+    return this.httpClient.put<Materiel>(environment.urlE + "updateEquipment", materiel)  // !!! Verifier la fonction avec le back !!!
   }
 
   getMaterielById(id:number):Observable<Materiel>{
-    return this.httpClient.get<Materiel>(environment.urlE+"materiel/"+id)
+    return this.httpClient.get<Materiel>(environment.urlE+"getEquipment/"+id)
   }
 }

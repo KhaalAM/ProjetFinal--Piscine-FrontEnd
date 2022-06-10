@@ -13,22 +13,22 @@ export class PlanningService {
   constructor(private httpClient:HttpClient) { }
 
   getAllPlannings():Observable<Planning[]>{
-    return this.httpClient.get<Planning[]>(environment.urlE+"plannings")// !!! Verifier les url avec le back !!!
+    return this.httpClient.get<Planning[]>(environment.urlE+"listSchedules")
   }
 
   addPlanning(planning:Planning):Observable<Planning>{
-    return this.httpClient.post<Planning>(environment.urlE + "savePlanning", planning)
+    return this.httpClient.post<Planning>(environment.urlE + "saveSchedule", planning)
   }
 
   deletePlanning(id:number):Observable<void>{
-    return this.httpClient.delete<void>(environment.urlE+"delete/"+id)
+    return this.httpClient.delete<void>(environment.urlE+"deleteSchedule/"+id)
   }
 
   updatePlanning(planning:Planning):Observable<Planning>{
-    return this.httpClient.put<Planning>(environment.urlE + "updatePlanning", planning)
+    return this.httpClient.put<Planning>(environment.urlE + "updateSchedule", planning)  // !!! Verifier la fonction avec le back !!!
   }
 
   getPlanningById(id:number):Observable<Planning>{
-    return this.httpClient.get<Planning>(environment.urlE+"planning/"+id)
+    return this.httpClient.get<Planning>(environment.urlE+"getSchedule/"+id)
   }
 }
