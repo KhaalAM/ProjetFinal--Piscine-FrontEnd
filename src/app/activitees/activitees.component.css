@@ -1,10 +1,13 @@
+.container .image {
+  width: 50%;
+  float: left;
+  
+}
 
-
-.bg-image{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-
-
+img{
+  border: 2px solid black;
+}
+.container img {
+  width: calc(100% - (20px * 2));
+  margin: 20px;
+}
