@@ -23,6 +23,7 @@ import { InscriptionAquaBikeComponent } from './inscription-aqua-bike/inscriptio
 import { InscriptionAquaGymComponent } from './inscription-aqua-gym/inscription-aqua-gym.component';
 import { InscriptionCoursNatationComponent } from './inscription-cours-natation/inscription-cours-natation.component';
 import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-plongee.component';
+import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
 
 
 
@@ -43,7 +44,8 @@ import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-p
     
     LoginComponent,
     PageNotFoundComponent,
-    InscriptionActiviteComponent
+    InscriptionActiviteComponent,
+    PaiementActiviteComponent
 
   ],
   imports: [
