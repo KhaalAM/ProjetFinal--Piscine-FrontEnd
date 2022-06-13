@@ -15,6 +15,9 @@ import { ActiviteesComponent } from './activitees/activitees.component';
 import { ContactComponent } from './contact/contact.component';
 import { HorairesComponent } from './horaires/horaires.component';
 import { FicheInscriptionClientComponent } from './fiche-inscription-client/fiche-inscription-client.component';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { InscriptionActiviteComponent } from './inscription-activite/inscription-activite.component';
 
 import { InscriptionAquaBikeComponent } from './inscription-aqua-bike/inscription-aqua-bike.component';
 import { InscriptionAquaGymComponent } from './inscription-aqua-gym/inscription-aqua-gym.component';
@@ -31,12 +34,16 @@ import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-p
     ActiviteesComponent,
     ContactComponent,
     HorairesComponent,
+    
     FicheInscriptionClientComponent,
     InscriptionAquaBikeComponent,
     InscriptionAquaGymComponent,
     InscriptionCoursNatationComponent,
     InscriptionPlongeeComponent,
     
+    LoginComponent,
+    PageNotFoundComponent,
+    InscriptionActiviteComponent
 
   ],
   imports: [
