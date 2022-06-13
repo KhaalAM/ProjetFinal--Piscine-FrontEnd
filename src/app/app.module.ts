@@ -56,11 +56,6 @@ import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-p
     HttpClientModule,
     MatNativeDateModule,
     MaterialExampleModule
-   
-
-    
-    
-
   ],
   
   providers: [],
