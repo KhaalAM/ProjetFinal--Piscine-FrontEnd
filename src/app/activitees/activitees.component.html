@@ -1,38 +1,60 @@
 
 <router-outlet></router-outlet>
-
-<div class="container">
-    
-
-
-  <div class="container">
-   <div class="image">
-      <img src="/assets/images/natation.PNG" class="img" alt="Natation" style="width:50%">
-      <h4><b> Cours de natation</b></h4>
-      <button type="button" class="btn btn-info btn-sm" routerLink= "/natation">S'inscrire</button>
+ <div class="row row-cols-1 row-cols-md-2 g-4 col-md-3 offset-md-3" style="width:50%" flex>
+   <div class="col">
+     <div class="card h-100">
+      <img src="/assets/images/natation.PNG" class="img" alt="Natation" style="width:100%">
+       <div class="card-body">
+         <h1 class="card-title">Natation</h1>
+         <p class="card-text">La natation sportive consiste à parcourir dans une piscine, le plus rapidement possible et dans un style codifié par la Fédération internationale de natation, une distance donnée, sans l'aide d'aucun accessoire.</p>
+       </div>
+       <div>       
+         <button type="button" class="btn btn-info btn-sm offset-md-2 col-md-3" routerLink= "/natation">S'inscrire</button>
+         <button type="button" class="btn btn-info btn-sm offset-md-2" routerLink= "/infosNatation">Plus d'informations</button>
+       </div>
+     </div>
    </div>
-   <div class="image">
-      <img src="/assets/images/aquagym.PNG" class="img" alt="aquagym" style="width:50%">
-         <p><b> Séance d'aquagym</b></p>
-      <button type="button" class="btn btn-info btn-sm" routerLink= "/aquaGym">S'inscrire</button>
+   <div class="col">
+     <div class="card h-100">
+      <img src="/assets/images/aquagym.PNG" class="img" alt="aquagym" style="width:100%">
+       <div class="card-body">
+         <h1 class="card-title">Aquagym</h1>
+         <p class="card-text">L'aquagym est la performance d'un exercice aérobie dans l'eau comme dans une piscine. Fait principalement verticalement et sans nager généralement dans des eaux profondes ou plus profondes, c'est un type d'entraînement en résistance.</p>
+       </div>
+       <div>       
+         <button type="button" class="btn btn-info btn-sm offset-md-2 col-md-3" routerLink= "/aquaGym">S'inscrire</button>
+         <button type="button" class="btn btn-info btn-sm offset-md-2" routerLink= "/infosAquaGym">Plus d'informations</button>
+       </div>
+     </div>
    </div>
-   <div class="image">
-      <img src="/assets/images/aquabike.PNG" class="img" alt="AquaBike" style="width:50%">
-      <h4><b> Séance d'aquabike</b></h4>
-      <button type="button" class="btn btn-info btn-sm" routerLink= "/aquaBike">S'inscrire</button>
+   <div class="col">
+     <div class="card h-100">
+      <img src="/assets/images/aquabike.PNG" class="img" alt="AquaBike" style="width:100%">
+       <div class="card-body">
+         <h1 class="card-title">Aquabike</h1>
+         <p class="card-text">L’aquabiking, également appelé aquacycling ou aquavélo, est une activité physique consistant à pratiquer le vélo avec le bas du corps immergé. Inventée en Italie dans les années 1990 par des kinésithérapeutes, cette pratique a pour objectif d'entraîner une dépense énergétique.</p>
+       </div>
+       <div>       
+         <button type="button" class="btn btn-info btn-sm offset-md-2 col-md-3" routerLink= "/aquaBike">S'inscrire</button>
+         <button type="button" class="btn btn-info btn-sm offset-md-2" routerLink= "/infosAquaBike">Plus d'informations</button>
+       </div>
+     </div>
    </div>
-   <div class="image">
-      <img src="/assets/images/plongee.PNG" class="img" alt="Natation" style="width:50%">
-      <h4><b> Cours de plongee</b></h4>
-      <button type="button" class="btn btn-info btn-sm" routerLink= "/plongée">S'inscrire</button>
+   <div class="col">
+     <div class="card h-100">
+       <img src="/assets/images/plongee.PNG" class="img" alt="Plongee" style="width:100%">
+       <div class="card-body">
+         <h1 class="card-title">Entrainement plongee</h1>
+         <p class="card-text">La plongée sous-marine est une activité consistant à rester sous l'eau, soit en apnée dans le cas de la plongée libre, soit en respirant à l'aide d'un narguilé ou le plus souvent en s'équipant d'une bouteille de plongée dans le cas de la plongée en scaphandre autonome.</p>
+       </div>
+       <div>       
+         <button type="button" class="btn btn-info btn-sm offset-md-2 col-md-3" routerLink= "/plongee">S'inscrire</button>
+         <button type="button" class="btn btn-info btn-sm offset-md-2" routerLink= "/infosPlongee">Plus d'informations</button>
+       </div>
+     </div>
    </div>
  </div>
-   </div>
-  
  
-
-
-
 
   
   <router-outlet></router-outlet>
