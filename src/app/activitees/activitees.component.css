@@ -1,0 +1,13 @@
+.container .image {
+  width: 50%;
+  float: left;
+  
+}
+
+img{
+  border: 2px solid black;
+}
+.container img {
+  width: calc(100% - (20px * 2));
+  margin: 20px;
+}
