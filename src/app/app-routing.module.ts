@@ -13,9 +13,11 @@ import { InscriptionActiviteComponent } from './inscription-activite/inscription
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PostInscriptionComponent } from './post-inscription/post-inscription.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
 
 
 const routes: Routes = [
+{path: 'accueil', component:AcceuilComponent},
 {path:'activites',component:ActiviteesComponent,
   children:[
     {path:'aquaGym',component: InscriptionAquaGymComponent},
