@@ -1,0 +1,31 @@
+<nav id="navbar" class="navbar navbar-light"[ngStyle]="{backgroundImage:'url(assets/images/eau.PNG)'}"  >
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <button class="btn btn-primary me-md-2" type="button" mat-button (click)="inputSideNav.toggle()">Menu </button>
+
+        <!--Bouton redirigeant vers la fiche d'inscription-->
+        <button (click)="retour()" id="retour" class="btn btn-primary me-md-2" type="button">Retour</button>
+        <button id="inscription"  class="btn btn-primary me-md-2" mat-list-item routerLink="/ficheInscriptionClient" type="button">S'inscrire</button>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-item dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+                    <div class="photo">
+                        <img src="" alt="">
+                    </div>
+                    Monsieur X
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item">Profile</a>
+                    <a class="dropdown-item">Deconnexion</a>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+
+
+</nav>

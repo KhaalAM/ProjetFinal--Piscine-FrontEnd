@@ -1,5 +1,5 @@
 .example-container {
-    width: 100%;
+    width: 50%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.5);
   }
@@ -20,10 +20,16 @@
    
   }
 
-  #content{
-    background-image:url(https://images.pexels.com/photos/8688152/pexels-photo-8688152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  .row{
+    background-image:url("src/assets/images/pexelsPiscine.jpg");
     background-size: 100%;
   }
-  head{
-    background-color: aquamarine;
-  }
+  
+
+
+ 
+
+
+
+
+ 
