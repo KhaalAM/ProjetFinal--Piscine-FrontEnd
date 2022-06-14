@@ -1,5 +1,28 @@
 #row{
-    background-image:url("src/assets/images/pexelsPiscine.jpg");
-    background-size: 100%;
-  }
-  
+  background-image:url("src/assets/images/pexelsPiscine.jpg");
+  background-size: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 24px;
+  grid-template-areas:
+  "header header"
+  "article aside"
+  "footer footer";
+}
+
+
+
+aside{
+grid-area:aside;
+}
+
+article{
+grid-area:article;
+}
+
+footer{
+grid-area:footer;
+}

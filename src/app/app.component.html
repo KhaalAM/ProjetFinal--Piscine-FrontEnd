@@ -1,16 +1,17 @@
-<div  class="container-fluid">
+<div class="container-fluid">
+
+
   <app-head [inputSideNav]="sideNav"></app-head>
 
+</div>
+
 <mat-sidenav-container class="row">
-  <mat-sidenav #sideNav mode="side">
+  <mat-sidenav #sideNav mode="side" opened id="sideN">
     <app-menu></app-menu>
-  
   </mat-sidenav>
-  
+
 
   <mat-sidenav-content>
     <router-outlet></router-outlet>
-  </mat-sidenav-content>  
+  </mat-sidenav-content>
 </mat-sidenav-container>
-</div>
-
