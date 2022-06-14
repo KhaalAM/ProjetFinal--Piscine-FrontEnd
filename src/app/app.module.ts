@@ -7,7 +7,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MaterialExampleModule } from 'src/material.module';
 
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,8 +22,6 @@ import { InscriptionAquaBikeComponent } from './inscription-aqua-bike/inscriptio
 import { InscriptionAquaGymComponent } from './inscription-aqua-gym/inscription-aqua-gym.component';
 import { InscriptionCoursNatationComponent } from './inscription-cours-natation/inscription-cours-natation.component';
 import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-plongee.component';
-import { PostInscriptionComponent } from './post-inscription/post-inscription.component';
-import { AcceuilComponent } from './acceuil/acceuil.component';
 
 
 
@@ -45,9 +42,7 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
     
     LoginComponent,
     PageNotFoundComponent,
-    InscriptionActiviteComponent,
-    PostInscriptionComponent,
-    AcceuilComponent
+    InscriptionActiviteComponent
 
   ],
   imports: [
@@ -60,6 +55,11 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
     HttpClientModule,
     MatNativeDateModule,
     MaterialExampleModule
+   
+
+    
+    
+
   ],
   
   providers: [],

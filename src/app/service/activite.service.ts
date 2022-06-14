@@ -15,19 +15,19 @@ export class ActiviteService {
     return this.httpClient.get<Activite[]>(environment.urlE+"listActivities")
   }
 
-  addActivites(activite:Activite):Observable<Activite>{
+  addActivite(activite:Activite):Observable<Activite>{
     return this.httpClient.post<Activite>(environment.urlE + "saveActivity", activite)
   }
 
-  deleteActivites(idActivite:number):Observable<void>{
+  deleteActivite(idActivite:number):Observable<void>{
     return this.httpClient.delete<void>(environment.urlE+"deleteActivity/"+ idActivite)
   }
 
-  updateActivites(activite:Activite):Observable<Activite>{
+  updateActivite(activite:Activite):Observable<Activite>{
     return this.httpClient.put<Activite>(environment.urlE + "updateActivity", activite)
   }
 
-  getActivitesById(idActivite:number):Observable<Activite>{
+  getActiviteById(idActivite:number):Observable<Activite>{
     return this.httpClient.get<Activite>(environment.urlE+"getActivity/"+ idActivite)
   }
 
