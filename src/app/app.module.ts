@@ -7,7 +7,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MaterialExampleModule } from 'src/material.module';
 
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -30,6 +29,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component';
 
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
+import { SelectActiviteComponent } from './select-activite/select-activite.component';
 
 
 
@@ -55,7 +55,8 @@ import { PaiementActiviteComponent } from './paiement-activite/paiement-activite
     LoginComponent,
     PageNotFoundComponent,
     InscriptionActiviteComponent,
-    PaiementActiviteComponent
+    PaiementActiviteComponent,
+    SelectActiviteComponent
 
   ],
   imports: [
