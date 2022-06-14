@@ -45,7 +45,6 @@ import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.compon
     TableauDeBordComponent,
     
 
-
   ],
   imports: [
     BrowserModule,
@@ -61,6 +60,7 @@ import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.compon
 
     
     
+
   ],
   
   providers: [],
