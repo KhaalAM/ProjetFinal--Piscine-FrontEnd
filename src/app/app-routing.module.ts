@@ -12,6 +12,8 @@ import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-p
 import { InscriptionActiviteComponent } from './inscription-activite/inscription-activite.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SelectActiviteComponent } from './select-activite/select-activite.component';
+import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
 
 
 const routes: Routes = [
@@ -27,8 +29,11 @@ const routes: Routes = [
 {path:'contact',component:ContactComponent},
 {path:'horaire',component:HorairesComponent},
 {path:'ficheInscriptionClient',component:FicheInscriptionClientComponent},
-{path: "login", component: LoginComponent,},
-{path:'inscriptionActivite',component:InscriptionActiviteComponent},
+{path: "login", component: LoginComponent},
+{path:'inscriptionActivite/:idActivite',component:InscriptionActiviteComponent},
+//{path: "descriptionActivite/:idActivite", component:ActiviteComponent},
+{path: "affichageListeActiviteMemeNom/:nomActivite", component:SelectActiviteComponent},
+{path: "paiementActivite/:idActivite", component : PaiementActiviteComponent},
 {path: "**", component: PageNotFoundComponent} //url qui n'existe pas, A METTRE EN DERNIER
 
 

@@ -19,12 +19,12 @@ export class SelectActiviteComponent implements OnInit {
    }
 
   ngOnInit(): void {
-   // this.listeActivite$=this.activiteService.get A FINIR
+   this.listeActivite$=this.activiteService.getListActivitiesSameName(this.nomActivite);
   }
 
   onSubmit(idActivite: number)
   {
-    this.router.navigateByUrl("/inscriptionActivite/" + idActivite)
+    this.router.navigateByUrl("/descriptionActivite/" + idActivite)
   }
 
 }

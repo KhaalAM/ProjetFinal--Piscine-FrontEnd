@@ -16,14 +16,17 @@ export class PaiementActiviteComponent implements OnInit {
   paymentHandler:any = null;
   idActivite!: number;
   activite$!: Observable<Activite>;
-  // id!: number;
-  // personne$! : Observable<Personne>; 
+
+//On verra plus tard comment on gère l'authentification, mais ca devrait pouvoir marcher en faisant passer le username ou l'id du client
+
+ // id!: number;
+ // personne$! : Observable<Personne>; 
   
 
   constructor( private activiteService:ActiviteService, private personneService:PersonneService, private router:Router, private activatedRoute : ActivatedRoute) {
 
-    // this.id = activatedRoute.snapshot.params['id']
-    // console.log("id : " + this.id)
+    //this.id = activatedRoute.snapshot.params['id']
+    //console.log("id : " + this.id)
 
     this.idActivite = activatedRoute.snapshot.params['idActivite']
     console.log("idActivité : " + this.idActivite)
@@ -38,6 +41,8 @@ export class PaiementActiviteComponent implements OnInit {
     
     // this.activite$.subscribe(); pas besoin vu qu'on a précisé le async dans le html
 
+
+    //this.personne$=this.personneService.getPersonneById(this.id);
     this.invokeStripe();
   }
   
