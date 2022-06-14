@@ -1,35 +1,16 @@
-<head>
+<div  class="container-fluid">
+  <app-head [inputSideNav]="sideNav"></app-head>
+
+<mat-sidenav-container class="row">
+  <mat-sidenav #sideNav mode="side">
+    <app-menu></app-menu>
   
-</head>
+  </mat-sidenav>
+  
 
-<body>
-  <header>  
-    <!--Bouton afficher Menu-->
-   <button class="btn btn-primary me-md-2" type="button" mat-button (click)="drawer.toggle()">
-     Menu
-   </button>
-     <!--Bouton redirigeant vers la fiche d'inscription-->
-       <button routerLink="/ficheInscriptionClient" class="btn btn-primary me-md-2"   type="button">S'inscrire</button>
-    
- </header>
-  <mat-drawer-container class="example-container" autosize id="content">
-  <mat-drawer fxFlex #drawer mode="side"style="display: inline-table; overflow: auto; position: fixed; margin-top: 40px; height: 100%;">   
-    <mat-nav-list>
-      <button mat-list-item routerLink="/accueil" >Page d'accueil</button>
-      <br>
-      <a mat-list-item routerLink="/activites" >Activités proposées</a>
-      <br>
-      <a mat-list-item routerLink="/horaire" >Horaires d'ouverture</a>
-      <br>
-      <a mat-list-item routerLink="/contact" >Contact</a>
-    </mat-nav-list>
-  </mat-drawer>
-
-  <p></p><router-outlet></router-outlet>
-
-</mat-drawer-container>
-</body>
-
-
-
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>  
+</mat-sidenav-container>
+</div>
 

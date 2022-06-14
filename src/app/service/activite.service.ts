@@ -37,4 +37,9 @@ export class ActiviteService {
     return this.httpClient.put<Activite>(environment.urlE + "setPlanningToActivity/" + activite.idActivite +"/"+ idPlanning, activite)
   }
 
+  //A tester aussi mais déja effective dans mysql, effectue la vérification : on ne peut pas s'inscrire à une activité si heureDébut>NOW()
+  getListActivitiesSameName(nomActivite:string):Observable<Activite[]>{
+    return this.httpClient.get<Activite[]>(environment.urlE+"listActivitiesSameName/"+ nomActivite )
+  }
+
 }
