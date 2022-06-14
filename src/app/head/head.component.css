@@ -1,0 +1,17 @@
+
+#navbar{
+    border: solid black 3px;
+}
+
+
+
+#inscription {
+    /*align: right;*/
+    float:right;
+    
+     position: relative;
+     top: 1px;
+     left: 1200px;
+    
+
+ }
