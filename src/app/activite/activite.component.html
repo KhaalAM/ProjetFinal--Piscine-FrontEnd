@@ -4,11 +4,11 @@
     <img src="/assets/images/natation.PNG" class="img" alt="Natation" style="width:50%">
     <p>DESCRIPTION A COMPLETER</p>
   </div>
-  <div *ngIf="activite.nomActivite=='aquagym'">
+  <div *ngIf="activite.nomActivite=='aquaGym'">
     <img src="/assets/images/aquagym.PNG" class="img" alt="Aquagym" style="width:50%">
     <p>DESCRIPTION A COMPLETER</p>
   </div>
-  <div *ngIf="activite.nomActivite=='aquabike'">
+  <div *ngIf="activite.nomActivite=='aquaBike'">
     <img src="/assets/images/aquabike.PNG" class="img" alt="AquaBike" style="width:50%">
     <p>DESCRIPTION A COMPLETER</p>
   </div>
@@ -20,7 +20,7 @@
     <p>
       Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}}
       Prix (hors Abonnement): {{activite.prix}} €
-      Places restantes : {{activite.nbrPlaces}}
+      Places restantes : {{activite.nbrPlaces}} <!-- il faudrait mettre un comteur à la place -->
     </p>
   </div>
 </div>
