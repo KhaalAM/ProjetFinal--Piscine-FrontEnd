@@ -14,10 +14,10 @@
     </div>
     <div class="mb-3">
       <label for="password" class="form-label">Mot de passe</label>
-      <input type="text" class="form-control" id="password" formControlName="password">
+      <input type="password" class="form-control" id="password" formControlName="password">
     </div>
     <div class="mb-3">
-      <label for="dateNaissance" class="form-label">Date de naissancen</label>
+      <label for="dateNaissance" class="form-label">Date de naissance</label>
       <input type="date" class="form-control" id="dateNaissance" formControlName="dateNaissance">
     </div>
     <div class="mb-3">
@@ -32,6 +32,6 @@
         <label for="email" class="form-label">Adresse mail</label>
         <input type="email" class="form-control" id="email" formControlName="email">
       </div>
-    <input type="submit" value="Enregister">
+    <input type="submit" (click)="onSave()" value="Enregister">
   </form>
 

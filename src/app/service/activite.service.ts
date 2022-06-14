@@ -15,19 +15,19 @@ export class ActiviteService {
     return this.httpClient.get<Activite[]>(environment.urlE+"listActivities")
   }
 
-  addActivites(activite:Activite):Observable<Activite>{
+  addActivite(activite:Activite):Observable<Activite>{
     return this.httpClient.post<Activite>(environment.urlE + "saveActivity", activite)
   }
 
-  deleteActivites(idActivite:number):Observable<void>{
+  deleteActivite(idActivite:number):Observable<void>{
     return this.httpClient.delete<void>(environment.urlE+"deleteActivity/"+ idActivite)
   }
 
-  updateActivites(activite:Activite):Observable<Activite>{
+  updateActivite(activite:Activite):Observable<Activite>{
     return this.httpClient.put<Activite>(environment.urlE + "updateActivity", activite)
   }
 
-  getActivitesById(idActivite:number):Observable<Activite>{
+  getActiviteById(idActivite:number):Observable<Activite>{
     return this.httpClient.get<Activite>(environment.urlE+"getActivity/"+ idActivite)
   }
 
@@ -35,6 +35,11 @@ export class ActiviteService {
   //(mais ne vérifie pas encore si elle chevauche ou pas une autre activité)
   setPlanningToActivity(activite:Activite, idPlanning:number):Observable<Activite>{
     return this.httpClient.put<Activite>(environment.urlE + "setPlanningToActivity/" + activite.idActivite +"/"+ idPlanning, activite)
+  }
+
+  //A tester aussi mais déja effective dans mysql, effectue la vérification : on ne peut pas s'inscrire à une activité si heureDébut>NOW()
+  getListActivitiesSameName(nomActivite:string):Observable<Activite[]>{
+    return this.httpClient.get<Activite[]>(environment.urlE+"listActivitiesSameName/"+ nomActivite )
   }
 
 }

@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Heure de début</th>
+        <th scope="col">Heure de fin</th>
+        <th scope="col">Nombre de places</th>
+        <th scope="col">Tarif (hors abonnement)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let a of listeActivite$ | async"> <!-- PAS OUBLIER DE METTRE async quand notre liste est un observable-->
+        <td>{{a.horaireDebut}}</td>
+        <td>{{a.horaireFin}}</td>
+        <td>{{a.nbrPlaces}}</td>
+        <td>{{a.prix}}</td>
+        <td>
+          <button  class="btn btn-success" (click) ="onSubmit(a.idActivite)">Modifier</button>  
+      </td>
+      </tr>
+    </tbody>
+</table>
+
