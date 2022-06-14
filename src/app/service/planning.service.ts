@@ -24,12 +24,22 @@ export class PlanningService {
     }
   ];
 
-  getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
+  /*getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
 
     return this.http.get("/" + from + " " + to) as Observable<any>;// backend ici 
-  }
+  }*/
 
- 
+  getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
+
+    // test: simulation d'une requete HTTP
+    return new Observable(observer => {
+      setTimeout(() => {
+        observer.next(this.events);
+      }, 200);
+    });
+
+   
+  }
 
 
   
