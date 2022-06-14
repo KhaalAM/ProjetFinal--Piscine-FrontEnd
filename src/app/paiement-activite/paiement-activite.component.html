@@ -1,0 +1,8 @@
+<div *ngIf="activite$ | async as activite">
+    <h1 >Paiement de l'activité {{activite.nomActivite}}</h1>
+
+    <div>
+        <button (click)="initializePayment(activite.prix)" >Payer {{activite.prix}}</button>
+    </div>
+
+</div>
