@@ -40,7 +40,7 @@ const routes: Routes = [
 {path:'ficheInscriptionClient',component:FicheInscriptionClientComponent},
 {path: "login", component: LoginComponent},
 {path:'inscriptionActivite/:idActivite',component:InscriptionActiviteComponent},
-//{path: "descriptionActivite/:idActivite", component:ActiviteComponent},
+{path: "descriptionActivite/:idActivite", component:ActiviteComponent},
 {path: "affichageListeActiviteMemeNom/:nomActivite", component:SelectActiviteComponent},
 {path: "paiementActivite/:idActivite", component : PaiementActiviteComponent},
 {path: "**", component: PageNotFoundComponent} //url qui n'existe pas, A METTRE EN DERNIER

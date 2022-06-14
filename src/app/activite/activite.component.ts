@@ -25,5 +25,10 @@ export class ActiviteComponent implements OnInit {
 
   }
 
+   onSubmit()
+  {
+    this.router.navigateByUrl("/inscriptionActivite/" + this.idActivite)
+  }
+
 
 }
