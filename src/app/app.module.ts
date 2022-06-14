@@ -30,6 +30,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component';
 
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
+import { ActiviteComponent } from './activite/activite.component';
 import { SelectActiviteComponent } from './select-activite/select-activite.component';
 
 
@@ -43,7 +44,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     ActiviteesComponent,
     ContactComponent,
     HorairesComponent,
-    
+
     FicheInscriptionClientComponent,
     InscriptionAquaBikeComponent,
     InscriptionAquaGymComponent,
@@ -52,11 +53,12 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     HeadComponent,
     MenuComponent,
     TableauDeBordComponent,
-    
+
     LoginComponent,
     PageNotFoundComponent,
     InscriptionActiviteComponent,
     PaiementActiviteComponent,
+    ActiviteComponent,
     SelectActiviteComponent
 
   ],
@@ -72,11 +74,11 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     MaterialExampleModule,
    MatSliderModule
 
-    
-    
+
+
 
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
