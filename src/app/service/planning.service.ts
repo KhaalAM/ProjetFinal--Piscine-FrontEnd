@@ -4,13 +4,45 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Planning } from '../model/planning.model';
 
+import {DayPilot} from "@daypilot/daypilot-lite-angular";
+
 @Injectable({
   providedIn: 'root'
 })
 export class PlanningService {
+ 
 
 
   constructor(private httpClient:HttpClient) { }
+
+  events: any[] = [
+    {
+      id: "1",
+      start: DayPilot.Date.today().addHours(10),
+      end: DayPilot.Date.today().addHours(12),
+      text: "activité 1"
+    }
+  ];
+
+
+
+  getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
+
+    // test: simulation d'une requete HTTP
+    return new Observable(observer => {
+      setTimeout(() => {
+        observer.next(this.events);
+      }, 200);
+    });
+
+   
+  }
+
+
+  
+
+
+
 
   getAllPlannings():Observable<Planning[]>{
     return this.httpClient.get<Planning[]>(environment.urlE+"listSchedules")
@@ -31,4 +63,15 @@ export class PlanningService {
   getPlanningById(id:number):Observable<Planning>{
     return this.httpClient.get<Planning>(environment.urlE+"getSchedule/"+id)
   }
+
+
+
+
+
+
+
+
+
+
 }
+

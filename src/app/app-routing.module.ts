@@ -10,6 +10,7 @@ import { InscriptionAquaGymComponent } from './inscription-aqua-gym/inscription-
 import { InscriptionCoursNatationComponent } from './inscription-cours-natation/inscription-cours-natation.component';
 import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-plongee.component';
 import { MenuComponent } from './menu/menu.component';
+import { PlanningComponent } from './planning/planning.component';
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component';
 
 const routes: Routes = [
@@ -24,7 +25,7 @@ const routes: Routes = [
 
   ]
 },
-
+{path:'planning',component:PlanningComponent},
 {path:'contact',component:ContactComponent},
 {path:'horaire',component:HorairesComponent},
 {path:'ficheInscriptionClient',component:FicheInscriptionClientComponent},
