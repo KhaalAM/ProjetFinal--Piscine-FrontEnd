@@ -13,7 +13,6 @@ import { InscriptionCoursNatationComponent } from './inscription-cours-natation/
 import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-plongee.component';
 
 import { MenuComponent } from './menu/menu.component';
-import { PlanningComponent } from './planning/planning.component';
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component';
 
 import { InscriptionActiviteComponent } from './inscription-activite/inscription-activite.component';
@@ -21,6 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SelectActiviteComponent } from './select-activite/select-activite.component';
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
+import { PlanningComponent } from './planning/planning.component';
 
 
 const routes: Routes = [
