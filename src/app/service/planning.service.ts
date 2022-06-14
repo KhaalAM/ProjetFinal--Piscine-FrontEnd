@@ -20,23 +20,16 @@ export class PlanningService {
       id: "1",
       start: DayPilot.Date.today().addHours(10),
       end: DayPilot.Date.today().addHours(12),
-      text: "activité 1"
+      text: "Cours Natation"
     }
   ];
 
-
-
   getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
 
-    // test: simulation d'une requete HTTP
-    return new Observable(observer => {
-      setTimeout(() => {
-        observer.next(this.events);
-      }, 200);
-    });
-
-   
+    return this.http.get("/" + from + " " + to) as Observable<any>;// backend ici 
   }
+
+ 
 
 
   

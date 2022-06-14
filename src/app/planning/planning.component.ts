@@ -24,11 +24,12 @@ export class PlanningComponent implements AfterViewInit {
   events: DayPilot.EventData[] = [];
   date = DayPilot.Date.today();
 
-  
+  //definit la taille des mois Affichés en petit 
   configNavigator: DayPilot.NavigatorConfig = {
-    showMonths: 3,
-    cellWidth: 25,
-    cellHeight: 25,
+    showMonths: 2,//le nombre de mois affichés
+    cellWidth: 35,
+    cellHeight: 35,
+
     onVisibleRangeChanged: args => {
       this.loadEvents();
     }
@@ -37,7 +38,7 @@ export class PlanningComponent implements AfterViewInit {
 
 
     selectTomorrow() {
-      this.date = DayPilot.Date.today().addDays(1);
+      this.date = DayPilot.Date.today().addDays(1);//ajout 1 jour a la date d'aujourd'hui dc demain
     }
   
     changeDate(date: DayPilot.Date): void {
@@ -52,7 +53,8 @@ export class PlanningComponent implements AfterViewInit {
     configWeek: DayPilot.CalendarConfig = {
       viewType: "Week",
       onTimeRangeSelected: async (args) => {
-        const modal = await DayPilot.Modal.prompt("Create a new event:", "Event 1");
+        //en clickant sur le calendrier:aparition d'un  pop up creer un nouvel evenement appelé event 1 posiible pour la semaine
+        const modal = await DayPilot.Modal.prompt("Créer un nouvel evenement:", "Activité 1");
         const dp = args.control;
         dp.clearSelection();
         if (!modal.result) { return; }
@@ -66,7 +68,6 @@ export class PlanningComponent implements AfterViewInit {
     };
 
     configMonth: DayPilot.MonthConfig = {
-
     };
   
   
@@ -89,7 +90,7 @@ export class PlanningComponent implements AfterViewInit {
     });
   }
 
-  
+    //affichage des jours/semaine/mois calendrier
     viewJour():void {
       this.configNavigator.selectMode = "Day";
       this.configDay.visible = true;
