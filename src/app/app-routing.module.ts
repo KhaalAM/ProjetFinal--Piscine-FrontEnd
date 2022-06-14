@@ -1,3 +1,4 @@
+import { ActiviteComponent } from './activite/activite.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActiviteesComponent } from './activitees/activitees.component';
@@ -29,11 +30,11 @@ const routes: Routes = [
     {path:'aquaBike',component:InscriptionAquaBikeComponent},
     {path:'natation', component:InscriptionCoursNatationComponent},
     {path:'plongee',component:InscriptionPlongeeComponent}
-    
+
 
   ]
 },
-
+{path:'activite/:idActivite',component:ActiviteComponent},
 {path:'contact',component:ContactComponent},
 {path:'horaire',component:HorairesComponent},
 {path:'ficheInscriptionClient',component:FicheInscriptionClientComponent},
