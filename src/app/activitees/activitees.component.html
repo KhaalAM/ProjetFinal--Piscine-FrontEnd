@@ -16,24 +16,37 @@
          <p><b> Séance d'aquagym</b></p>
       <button type="button" class="btn btn-info btn-sm" routerLink= "/aquaGym">S'inscrire</button>
    </div>
-   <div class="image">
-      <img src="/assets/images/aquabike.PNG" class="img" alt="AquaBike" style="width:50%">
-      <h4><b> Séance d'aquabike</b></h4>
-      <button type="button" class="btn btn-info btn-sm" routerLink= "/aquaBike">S'inscrire</button>
+   <div class="col">
+     <div class="card h-100">
+      <img src="/assets/images/aquabike.PNG" class="img" alt="AquaBike" style="width:100%">
+       <div class="card-body">
+         <h1 class="card-title">Aquabike</h1>
+         <p class="card-text">L’aquabiking, également appelé aquacycling ou aquavélo, est une activité physique consistant à pratiquer le vélo avec le bas du corps immergé. Inventée en Italie dans les années 1990 par des kinésithérapeutes, cette pratique a pour objectif d'entraîner une dépense énergétique.</p>
+       </div>
+       <div>       
+         <button type="button" class="btn btn-info btn-sm offset-md-2 col-md-3" routerLink= "/aquaBike">S'inscrire</button>
+         <button type="button" class="btn btn-info btn-sm offset-md-2" routerLink= "/infosAquaBike">Plus d'informations</button>
+       </div>
+     </div>
    </div>
-   <div class="image">
-      <img src="/assets/images/plongee.PNG" class="img" alt="Plongée" style="width:50%">
-      <h4><b> Cours de plongee</b></h4>
-      <button type="button" class="btn btn-info btn-sm" routerLink= "/plongée">S'inscrire</button>
+
+   <div class="col">
+     <div class="card h-100">
+       <img src="/assets/images/plongee.PNG" class="img" alt="Plongee" style="width:100%">
+       <div class="card-body">
+         <h1 class="card-title">Entrainement plongee</h1>
+         <p class="card-text">La plongée sous-marine est une activité consistant à rester sous l'eau, soit en apnée dans le cas de la plongée libre, soit en respirant à l'aide d'un narguilé ou le plus souvent en s'équipant d'une bouteille de plongée dans le cas de la plongée en scaphandre autonome.</p>
+       </div>
+       <div>       
+         <button type="button" class="btn btn-info btn-sm offset-md-2 col-md-3" routerLink= "/plongee">S'inscrire</button>
+         <button type="button" class="btn btn-info btn-sm offset-md-2" routerLink= "/infosPlongee">Plus d'informations</button>
+       </div>
+     </div>
    </div>
  </div>
-   </div>
+ 
 
-
-
-
-
-
+  
 
   <router-outlet></router-outlet>
 
