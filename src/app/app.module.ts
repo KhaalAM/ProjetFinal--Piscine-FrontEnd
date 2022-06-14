@@ -24,6 +24,7 @@ import { InscriptionAquaGymComponent } from './inscription-aqua-gym/inscription-
 import { InscriptionCoursNatationComponent } from './inscription-cours-natation/inscription-cours-natation.component';
 import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-plongee.component';
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
+import { ActiviteComponent } from './activite/activite.component';
 
 
 
@@ -45,7 +46,8 @@ import { PaiementActiviteComponent } from './paiement-activite/paiement-activite
     LoginComponent,
     PageNotFoundComponent,
     InscriptionActiviteComponent,
-    PaiementActiviteComponent
+    PaiementActiviteComponent,
+    ActiviteComponent
 
   ],
   imports: [
