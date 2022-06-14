@@ -1,3 +1,22 @@
-.carouselExampleInterval{
-    justify-items: auto;
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 24px;
+    grid-template-areas:
+    "article" "aside"
+    "footer footer";
+}
+
+
+
+aside{
+    grid-area:aside;
+}
+
+article{
+    grid-area:article;
+}
+
+footer{
+    grid-area:footer;
 }

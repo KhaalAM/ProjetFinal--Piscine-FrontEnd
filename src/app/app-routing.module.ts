@@ -13,6 +13,7 @@ import { InscriptionCoursNatationComponent } from './inscription-cours-natation/
 import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-plongee.component';
 
 import { MenuComponent } from './menu/menu.component';
+import { PlanningComponent } from './planning/planning.component';
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component';
 
 import { InscriptionActiviteComponent } from './inscription-activite/inscription-activite.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
   ]
 },
 {path:'activite/:idActivite',component:ActiviteComponent},
+{path:'planning',component:PlanningComponent},
 {path:'contact',component:ContactComponent},
 {path:'horaire',component:HorairesComponent},
 {path:'ficheInscriptionClient',component:FicheInscriptionClientComponent},
