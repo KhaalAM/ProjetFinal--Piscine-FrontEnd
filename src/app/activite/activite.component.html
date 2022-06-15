@@ -1,3 +1,4 @@
+<p>activite works!</p>
 <div *ngIf="activite$ | async as activite" class="container">
   <h1>{{activite.nomActivite}}</h1>
  <div *ngIf="activite.nomActivite=='natation'">
@@ -23,4 +24,6 @@
       Places restantes : {{activite.nbrPlaces}}
     </p>
   </div>
+  <button  class="btn btn-success" (click) ="onSubmit()">S'inscrire</button>
+  <!--Ajouter authentification-->
 </div>
