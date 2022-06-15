@@ -5,15 +5,18 @@
 
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-gap: 24px;
   grid-template-areas:
   "header header"
   "article aside"
   "footer footer";
+
 }
 
-
+header{
+  grid-area:header;
+}
 
 aside{
 grid-area:aside;
