@@ -77,7 +77,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     MaterialExampleModule,
     MatSliderModule,
     CalendarModule,
-    DayPilotModule,
+    DayPilotModule
     
 
     

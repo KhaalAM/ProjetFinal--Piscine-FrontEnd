@@ -27,6 +27,7 @@ export class PlanningService {
   /*getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
 
     return this.http.get("/" + from + " " + to) as Observable<any>;// backend ici 
+    // return this.http.get("/api/events?from=" + from.toString() + "&to=" + to.toString());
   }*/
 
   getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
@@ -38,6 +39,7 @@ export class PlanningService {
       }, 200);
     });
 
+    
    
   }
 
