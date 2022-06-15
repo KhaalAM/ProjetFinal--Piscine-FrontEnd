@@ -29,6 +29,6 @@ export class FicheInscriptionClientComponent implements OnInit {
 
   onSave(){
     this.personneService.addPersonne(this.personneForm.value).subscribe()
-    this.router.navigate(["AMODIFIER"])
+    this.router.navigate(['']);
   }
 }

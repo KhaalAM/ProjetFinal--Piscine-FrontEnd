@@ -1,7 +1,7 @@
 import { ActiviteComponent } from './activite/activite.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActiviteesComponent } from './activitees/activitees.component';
+import { ActivitesComponent } from './activites/activites.component';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { FicheInscriptionClientComponent } from './fiche-inscription-client/fiche-inscription-client.component';
@@ -23,7 +23,7 @@ const routes: Routes = [
 {path:'horaire',component:HorairesComponent},
 {path:'ficheInscriptionClient',component:FicheInscriptionClientComponent},
 {path: "login", component: LoginComponent},
-{path:'activitees',component:ActiviteesComponent},
+{path:'activites',component:ActivitesComponent},
 {path: "affichageListeActiviteMemeNom/:nomActivite", component:SelectActiviteComponent},
 {path: "descriptionActivite/:idActivite", component:ActiviteComponent},
 {path:'inscriptionActivite/:idActivite',component:InscriptionActiviteComponent},

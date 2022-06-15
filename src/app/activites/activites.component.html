@@ -34,13 +34,23 @@
 
 <!-- Essai en factorisant, on va donner une liste d'activité présentant chaque type ici -->
 
-<div *ngFor = "let a of listeActivites$ | async" class="container">
+<div *ngFor = "let nomActivite of listeNomActivites$ | async" class="container">
+   <div class="image">
+      <img src="/assets/images/{{nomActivite}}.PNG" class="img" alt="{{nomActivite}}" style="width:50%">
+      <h4><b> Cours de {{nomActivite}}</b></h4>
+      <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName(nomActivite)">S'inscrire</button>
+   </div>
+  
+</div>
+
+<!--Avec juste l'objet-->
+<!-- <div *ngFor = "let a of listeActivites" class="container">
    <div class="image">
       <img src="/assets/images/{{a.nomActivite}}.PNG" class="img" alt="{{a.nomActivite}}" style="width:50%">
       <h4><b> Cours de {{a.nomActivite}}</b></h4>
       <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName(a.nomActivite)">S'inscrire</button>
    </div>
   
-</div>
+</div> -->
    
 
