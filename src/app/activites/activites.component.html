@@ -1,0 +1,56 @@
+
+<head></head>
+<!-- <div *ngIf="activite$ | async as activite"  class="container">
+
+
+
+   <div class="container">
+      <div class="image">
+         <img src="/assets/images/natation.PNG" class="img" alt="Natation" style="width:50%">
+         <h4><b> Cours de natation</b></h4>
+         <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName()">S'inscrire</button>
+      </div>
+      <div class="image">
+         <img src="/assets/images/aquagym.PNG" class="img" alt="Aquagym" style="width:50%">
+         <h4><b> Séance d'aquagym</b></h4>
+         <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName()">S'inscrire</button>
+      </div>
+      <div class="image">
+         <img src="/assets/images/aquabike.PNG" class="img" alt="AquaBike" style="width:50%">
+         <h4><b> Séance d'aquabike</b></h4>
+         <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName()">S'inscrire</button>
+      </div>
+      <div class="image">
+         <img src="/assets/images/plongee.PNG" class="img" alt="Plongée" style="width:50%">
+         <h4><b> Cours de plongee</b></h4>
+         <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName()">S'inscrire</button>
+      </div>
+   </div>
+   
+
+</div> -->
+
+
+
+<!-- Essai en factorisant, on va donner une liste d'activité présentant chaque type ici -->
+
+<div *ngFor = "let nomActivite of listeNomActivites$ | async" class="container">
+   <div class="image">
+      <img src="/assets/images/{{nomActivite}}.PNG" class="img" alt="{{nomActivite}}" style="width:50%">
+      <h4><b> Cours de {{nomActivite}}</b></h4>
+      <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName(nomActivite)">S'inscrire</button>
+   </div>
+  
+</div>
+
+<!--Avec juste l'objet-->
+<!-- <div *ngFor = "let a of listeActivites" class="container">
+   <div class="image">
+      <img src="/assets/images/{{a.nomActivite}}.PNG" class="img" alt="{{a.nomActivite}}" style="width:50%">
+      <h4><b> Cours de {{a.nomActivite}}</b></h4>
+      <button type="button" class="btn btn-info btn-sm" (click) ="goListSameName(a.nomActivite)">S'inscrire</button>
+   </div>
+  
+</div> -->
+   
+

@@ -15,7 +15,7 @@ export class SelectActiviteComponent implements OnInit {
   listeActivite$!: Observable<Activite[]>;
   constructor(private activiteService:ActiviteService, private router:Router, private activatedRoute : ActivatedRoute) {
     this.nomActivite = activatedRoute.snapshot.params['nomActivite']
-    console.log("idActivité : " + this.nomActivite)
+    console.log("nomActivité : " + this.nomActivite)
    }
 
   ngOnInit(): void {
