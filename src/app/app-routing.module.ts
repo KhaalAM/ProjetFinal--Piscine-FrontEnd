@@ -30,8 +30,6 @@ const routes: Routes = [
     {path:'aquaBike',component:InscriptionAquaBikeComponent},
     {path:'natation', component:InscriptionCoursNatationComponent},
     {path:'plongee',component:InscriptionPlongeeComponent}
-    
-
   ]
 },
 {path:'planning',component:PlanningComponent},

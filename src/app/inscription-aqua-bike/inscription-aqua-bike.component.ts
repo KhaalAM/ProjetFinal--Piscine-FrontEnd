@@ -26,17 +26,4 @@ export class InscriptionAquaBikeComponent implements OnInit {
     /*this.XXXXXX.addPersonne(this.personneInscri.value).subscribe()*/
     this.router.navigate([""])
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

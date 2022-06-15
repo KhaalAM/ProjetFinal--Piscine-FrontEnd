@@ -1,4 +1,3 @@
-<router-outlet></router-outlet>
 <br>
   <form [formGroup]="personneInscri" (ngSubmit)="onSave()">
     <div class="mb-3">
@@ -6,11 +5,11 @@
       <input type="text" class="form-control" id="nom" formControlName="nom">
     </div>
     <div class="mb-3">
-        <label for="prenom" class="form-label">Prénom</label>
+        <label for="prenom" class="form-label">Prenom</label>
         <input type="text" class="form-control" id="prenom" formControlName="prenom">
       </div>
       <div class="mb-3">
-        <label for="telephone" class="form-label">Numéro de téléphone</label>
+        <label for="telephone" class="form-label">Numero de telephone</label>
         <input type="text" class="form-control" id="telephone" formControlName="telephone">
       </div>
       <div class="mb-3">
@@ -18,7 +17,7 @@
         <input type="email" class="form-control" id="email" formControlName="email">
       </div>places
       <div>
-      Combien de place voulez-vous réserver? :
+      Combien de place voulez-vous reserver? :
       <select formControlName="">
         <option value="1">1
         <option value="2">2
@@ -32,6 +31,3 @@
     </div>
     <input type="submit" (click)="onSave()" value="Enregister">
   </form>
-  
- 
-
