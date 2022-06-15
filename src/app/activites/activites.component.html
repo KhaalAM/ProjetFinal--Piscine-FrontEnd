@@ -1,9 +1,9 @@
 <head></head>
 
-<div class="row row-cols-1 row-cols-md-3 g-4 activites">
+<div class="row row-cols-1 row-cols-md-3 g-4 activites centre">
 
    <div *ngFor="let nomActivite of listeNomActivites$ | async" class="col">
-      <div class="card h-20">
+      <div class="card h-20 container">
         <img src="/assets/images/{{nomActivite}}.PNG" class="card-img-top" alt="{{nomActivite}}">
         <div class="card-body">
           <h1 class="card-title">Cours de {{nomActivite}}</h1>
