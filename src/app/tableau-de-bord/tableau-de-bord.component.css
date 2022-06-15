@@ -1,5 +1,40 @@
 #row{
-    background-image:url("src/assets/images/pexelsPiscine.jpg");
-    background-size: 100%;
-  }
-  
+  background-image:url("src/assets/images/pexelsPiscine.jpg");
+  background-size: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 24px;
+  grid-template-areas:
+  "header header"
+  "article aside"
+  "footer footer";
+}
+
+.centre{
+  position: relative;
+  top: 50px;
+  left: 140px;
+}
+.header{
+  position: relative;
+  top: 10px;
+}
+header{
+  grid-area:header;
+}
+
+aside{
+grid-area:aside;
+}
+
+article{
+grid-area:article;
+}
+
+footer{
+grid-area:footer;
+
+}
