@@ -32,6 +32,7 @@ import { CalendarModule } from 'angular-calendar';
 import { DayPilotModule } from '@daypilot/daypilot-lite-angular';
 
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
+import { ActiviteComponent } from './activite/activite.component';
 import { SelectActiviteComponent } from './select-activite/select-activite.component';
 
 
@@ -45,7 +46,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     ActiviteesComponent,
     ContactComponent,
     HorairesComponent,
-    
+
     FicheInscriptionClientComponent,
     InscriptionAquaBikeComponent,
     InscriptionAquaGymComponent,
@@ -62,6 +63,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     PageNotFoundComponent,
     InscriptionActiviteComponent,
     PaiementActiviteComponent,
+    ActiviteComponent,
     SelectActiviteComponent
 
   ],
@@ -80,11 +82,11 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     DayPilotModule
     
 
-    
-    
+
+
 
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
