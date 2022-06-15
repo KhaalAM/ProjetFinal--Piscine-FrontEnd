@@ -10,7 +10,7 @@ import { MaterialExampleModule } from 'src/material.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { ActivitesComponent } from './activitees/activites.component';
+import { ActivitesComponent } from './activites/activites.component';
 import { ContactComponent } from './contact/contact.component';
 import { HorairesComponent } from './horaires/horaires.component';
 import { FicheInscriptionClientComponent } from './fiche-inscription-client/fiche-inscription-client.component';
@@ -37,7 +37,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
 @NgModule({
   declarations: [
     AppComponent,
-    ActiviteesComponent,
+    ActivitesComponent,
     ContactComponent,
     HorairesComponent,
 
