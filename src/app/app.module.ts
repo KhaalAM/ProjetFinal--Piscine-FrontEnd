@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, } from '@angular/platform-browser';
 import {MatSidenavModule} from '@angular/material/sidenav'
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -27,6 +27,9 @@ import { HeadComponent } from './head/head.component';
 import { MenuComponent } from './menu/menu.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component';
+import { PlanningComponent } from './planning/planning.component';
+import { CalendarModule } from 'angular-calendar';
+import { DayPilotModule } from '@daypilot/daypilot-lite-angular';
 
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
 import { ActiviteComponent } from './activite/activite.component';
@@ -52,7 +55,10 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     HeadComponent,
     MenuComponent,
     TableauDeBordComponent,
-
+    PlanningComponent,
+    
+   
+    
     LoginComponent,
     PageNotFoundComponent,
     InscriptionActiviteComponent,
@@ -71,7 +77,10 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     HttpClientModule,
     MatNativeDateModule,
     MaterialExampleModule,
-   MatSliderModule
+    MatSliderModule,
+    CalendarModule,
+    DayPilotModule,
+    
 
 
 
