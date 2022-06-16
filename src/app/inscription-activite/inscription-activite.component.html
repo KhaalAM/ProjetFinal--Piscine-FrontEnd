@@ -1,5 +1,5 @@
 <div *ngIf="activite$ | async as activite" class="container">
-
+  
   <h1><mark>{{activite.nomActivite}}</mark></h1>
   <div class="card">
     <img src="/assets/images/{{activite.nomActivite}}.PNG" class="img" alt="{{activite.nomActivite}}" style="width:100%">
@@ -12,7 +12,6 @@
     <p *ngIf="activite.nomActivite==='Natation Maternite'" class="card-text honor">Si de nombreux sports sont déconseillés aux femmes enceintes, l'aquagym prénatale (aussi appelé cours de préparation à la naissance) en revanche présente un excellent moyen de se détendre et de préparer sereinement son accouchement.</p>
     <p *ngIf="activite.nomActivite==='Aquafusion'" class="card-text honor">Comme la natation ou l’aquagym, l’aquafusion est un sport aquatique ultra-complet qui fait travailler toutes les parties de votre corps. Il présente cependant l’avantage d’être beaucoup plus tonique et plus ludique que l'aquagym.</p>
     <p *ngIf="activite.nomActivite==='Waterpolo'" class="card-text honor">Un sport d’équipe, qui nécessite rapidité, adresse et endurance, pour lequel deux équipes de 7 joueurs s’opposent dans une piscine avec un ballon. Objectif : marquer plus de buts que les adversaires!</p>
-
   </div>
 <br>
 
@@ -22,7 +21,6 @@
       Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}} <br>
       Prix (hors Abonnement): {{activite.prix}} € <br>
       Places restantes : {{activite.nbrPlaces}} <br>
-
     </p>
   </div>
   <br>
