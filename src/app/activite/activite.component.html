@@ -1,31 +1,30 @@
+
 <div *ngIf="activite$ | async as activite" class="container">
-  <div class="card w-50 container mx-auto" style="background-color:rgb(209, 233, 253)">
-    <h1>{{activite.nomActivite}}</h1>
-    <div>
 
-      <img src="/assets/images/{{activite.nomActivite}}.PNG" class="img" alt="{{activite.nomActivite}}" style="width:50%">
-      <p *ngIf="activite.nomActivite==='Lecon personnelle'" class="card-text">La natation sportive consiste à parcourir dans une piscine, le plus rapidement possible et dans un style codifié par la Fédération internationale de natation, une distance donnée, sans l'aide d'aucun accessoire. La natation sportive peut être pratiquée à tout âge.</p>
-      <p *ngIf="activite.nomActivite==='Aquagym'" class="card-text">L'aquagym est la performance d'un exercice aérobie dans l'eau comme dans une piscine. Fait principalement verticalement et sans nager généralement dans des eaux profondes ou plus profondes, c'est un type d'entraînement en résistance.</p>
-      <p *ngIf="activite.nomActivite==='Aquabike'" class="card-text">L'aquabike en tant que pratique sportive enchaînée et gérée par la Fédération internationale de triathlon est un sport dérivé du triathlon. Il enchaîne sans interruption, une partie natation en eaux vives et de cyclisme sur route. Il se pratique sur courte, moyenne et longue distance.</p>
-      <p *ngIf="activite.nomActivite==='Water run'" class="card-text">Il fait trop chaud pour son running habituel ? Troquez-le contre un aquarunning ! Excellente pour se rafraîchir, se tonifier et s'affiner, la course à pied version aquatique transpire de bienfaits.</p>
-      <p *ngIf="activite.nomActivite==='Aqua Crossfit'" class="card-text">Activité hors et dans l’eau, ce cours additionne les bienfaits de l’aquafitness et du crossfit en proposant un programme complet, efficace, intense et ludique !</p>
-      <p *ngIf="activite.nomActivite==='Yoga'" class="card-text">Une synergie entre le yoga (dans et hors de l’eau), la méditation, la danse et l’art martial pour se renforcer les muscles profonds, en utilisant l’eau qui apporte la fluidité nécessaire à l'équilibre du corps.</p>
-      <p *ngIf="activite.nomActivite==='Natation Maternite'" class="card-text">Si de nombreux sports sont déconseillés aux femmes enceintes, l'aquagym prénatale (aussi appelé cours de préparation à la naissance) en revanche présente un excellent moyen de se détendre et de préparer sereinement son accouchement.</p>
-      <p *ngIf="activite.nomActivite==='Aquafusion'" class="card-text">Comme la natation ou l’aquagym, l’aquafusion est un sport aquatique ultra-complet qui fait travailler toutes les parties de votre corps. Il présente cependant l’avantage d’être beaucoup plus tonique et plus ludique que l'aquagym.</p>
-      <p *ngIf="activite.nomActivite==='Waterpolo'" class="card-text">Un sport d’équipe, qui nécessite rapidité, adresse et endurance, pour lequel deux équipes de 7 joueurs s’opposent dans une piscine avec un ballon. Objectif : marquer plus de buts que les adversaires!</p>
-
-    </div>
-
-    <div>
-      <p><br>
-        Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}} <br>
-        Prix (hors Abonnement): {{activite.prix}} € <br>
-        Places restantes : {{activite.nbrPlaces}} <br><!-- il faudrait mettre un comteur à la place -->
-      </p>
-    </div>
-
-    <button  class="btn btn-success" (click) ="onSubmit()">Réserver</button><br>
-    <!--Ajouter authentification-->
+  <h1><mark>{{activite.nomActivite}}</mark></h1>
+  <div class="card " style="width: 600px">
+    <img src="/assets/images/{{activite.nomActivite}}.PNG" class="img" alt="{{activite.nomActivite}}" style="width:100%">
+    <p *ngIf="activite.nomActivite==='Lecon personnelle'" class="card-text honor">La natation sportive consiste à parcourir dans une piscine, le plus rapidement possible et dans un style codifié par la Fédération internationale de natation, une distance donnée, sans l'aide d'aucun accessoire. La natation sportive peut être pratiquée à tout âge.</p>
+    <p *ngIf="activite.nomActivite==='Aquagym'" class="card-text honor">L'aquagym est la performance d'un exercice aérobie dans l'eau comme dans une piscine. Fait principalement verticalement et sans nager généralement dans des eaux profondes ou plus profondes, c'est un type d'entraînement en résistance.</p>
+    <p *ngIf="activite.nomActivite==='Aquabike'" class="card-text honor">L'aquabike en tant que pratique sportive enchaînée et gérée par la Fédération internationale de triathlon est un sport dérivé du triathlon. Il enchaîne sans interruption, une partie natation en eaux vives et de cyclisme sur route. Il se pratique sur courte, moyenne et longue distance.</p>
+    <p *ngIf="activite.nomActivite==='Water run'" class="card-text honor">Il fait trop chaud pour son running habituel ? Troquez-le contre un aquarunning ! Excellente pour se rafraîchir, se tonifier et s'affiner, la course à pied version aquatique transpire de bienfaits.</p>
+    <p *ngIf="activite.nomActivite==='Aqua Crossfit'" class="card-text honor">Activité hors et dans l’eau, ce cours additionne les bienfaits de l’aquafitness et du crossfit en proposant un programme complet, efficace, intense et ludique !</p>
+    <p *ngIf="activite.nomActivite==='Yoga'" class="card-text honor">Une synergie entre le yoga (dans et hors de l’eau), la méditation, la danse et l’art martial pour se renforcer les muscles profonds, en utilisant l’eau qui apporte la fluidité nécessaire à l'équilibre du corps.</p>
+    <p *ngIf="activite.nomActivite==='Natation Maternite'" class="card-text honor">Si de nombreux sports sont déconseillés aux femmes enceintes, l'aquagym prénatale (aussi appelé cours de préparation à la naissance) en revanche présente un excellent moyen de se détendre et de préparer sereinement son accouchement.</p>
+    <p *ngIf="activite.nomActivite==='Aquafusion'" class="card-text honor">Comme la natation ou l’aquagym, l’aquafusion est un sport aquatique ultra-complet qui fait travailler toutes les parties de votre corps. Il présente cependant l’avantage d’être beaucoup plus tonique et plus ludique que l'aquagym.</p>
+    <p *ngIf="activite.nomActivite==='Waterpolo'" class="card-text honor">Un sport d’équipe, qui nécessite rapidité, adresse et endurance, pour lequel deux équipes de 7 joueurs s’opposent dans une piscine avec un ballon. Objectif : marquer plus de buts que les adversaires!</p>
   </div>
+<br>
+
+  <div class="card" style="width: 600px">
+    <p class="honor">
+      Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}} <br>
+      Prix (hors Abonnement): {{activite.prix}} € <br>
+      Places restantes : {{activite.nbrPlaces}} <br>
+    </p>
+  </div>
+  <br>
+  <button  class="btn btn-success" (click) ="onSubmit()">S'inscrire</button>
+  <!--Ajouter authentification-->
 </div>
 

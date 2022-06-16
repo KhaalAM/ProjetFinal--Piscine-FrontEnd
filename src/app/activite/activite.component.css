@@ -1,36 +1,14 @@
-.container {
-  float: left;
-  padding-top: 2%;
+.honor{
+    margin: 20px;
+}
 
+.img{
+    padding: 20px;
 
 }
 
-.centre {
-  justify-content: space-evenly;
-}
-
-
-
-img {
-  border: 2px solid black;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: block;
-  margin : auto;
-}
-
-
-.activites {
-  justify-content: space-evenly;
-  align-items: center;
-  width: 85%;
-  display: inline-flexbox;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  height: fit-content;
-}
-
-.card-text{
-  font-size:17px;
+mark{
+    margin: 20px;
+    background-color: white;
+    color: black;
 }

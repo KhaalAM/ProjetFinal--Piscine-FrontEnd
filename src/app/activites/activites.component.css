@@ -1,5 +1,5 @@
 .container {
-  float: left;
+  float: right;
   padding-top: 2%;
 
 
@@ -36,3 +36,12 @@ img {
 }
 
 
+
+.block1{
+
+float: right;
+margin-right: 100px;
+position: absolute;
+
+
+}
