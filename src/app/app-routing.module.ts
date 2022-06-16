@@ -16,6 +16,7 @@ import { PaiementActiviteComponent } from './paiement-activite/paiement-activite
 import { PlanningComponent } from './planning/planning.component';
 
 
+
 const routes: Routes = [
 
 {path:'planning',component:PlanningComponent},

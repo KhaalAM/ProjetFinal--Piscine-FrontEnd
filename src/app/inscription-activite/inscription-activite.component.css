@@ -1,9 +1,12 @@
+
 .honor{
     margin: 20px;
 }
 
 .img{
     padding: 20px;
+  float:right
+margin-right 10px; 
 
 }
 
@@ -12,3 +15,4 @@ mark{
     background-color: white;
     color: black;
 }
+

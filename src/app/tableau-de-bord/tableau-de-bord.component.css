@@ -26,6 +26,7 @@ header{
   grid-area:header;
 }
 
+
 aside{
 grid-area:aside;
 }
@@ -35,6 +36,6 @@ grid-area:article;
 }
 
 footer{
-grid-area:footer;
-
-}
+  grid-area:footer;
+  
+  }

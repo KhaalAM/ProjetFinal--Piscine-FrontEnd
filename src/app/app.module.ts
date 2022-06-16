@@ -34,6 +34,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

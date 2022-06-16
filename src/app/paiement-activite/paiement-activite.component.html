@@ -1,8 +1,20 @@
-<div *ngIf="activite$ | async as activite">
-    <h1 >Paiement de l'activité {{activite.nomActivite}}</h1>
+<div class="chip" *ngIf="activite$ | async as activite">
 
-    <div>
-        <button (click)="initializePayment(activite.prix)" >Payer {{activite.prix}}</button>
+    <div class="btn">
     </div>
+    <div class="Paiement">
+        <img class="Paiement-profile-img"
+            src="https://images.pexels.com/photos/8043650/pexels-photo-8043650.jpeg?cs=srgb&dl=pexels-steve-dimatteo-8043650.jpg&fm=jpg"
+            alt="">
+        <div class="Paiement-description-bk"></div>
 
+
+        <div class="Paiement-description">
+            <h1>Paiement de l'activité {{activite.nomActivite}}</h1>
+        </div>
+
+        <div class="Paiement-btn" (click)="initializePayment(activite.prix)">
+            Payer 1 place: {{activite.prix}} euros
+        </div>
+    </div>
 </div>
