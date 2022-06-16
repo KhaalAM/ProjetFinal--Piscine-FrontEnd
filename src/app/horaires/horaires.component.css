@@ -1,10 +1,12 @@
 table {
-    float: right;
-    position: absolute;
+
     border-collapse: collapse;
     border-spacing: 0;
     width: 45%;
     border: 2px solid rgb(0, 0, 0);
+    background-color:rgb(141, 196, 241);
+    margin-left: auto;
+    margin-right: auto
   }
 
   /* Style table headers and table data */
@@ -26,26 +28,22 @@ table {
     background-color: #3189b8
   }
 
- .tableH{
 
-    float: right;
-    padding-left: 200px;
- }
  .labelH{
-text-align: center;
-text-decoration: underline;
-
-
+    text-align: center;
+    text-decoration: underline;
  }
 
  .Info{
-  background-color: rgb(209, 233, 253)
-
+  background-color: rgb(209, 233, 253);
+  padding-left: 20px;
  }
 
 
 .wrapper1{
-  padding-right: 16px;
-  padding-top: 16px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto
 
 }
+
