@@ -1,5 +1,5 @@
 <br>
-  <form [formGroup]="personneForm" (ngSubmit)="onSave()" style="background-color: rgb(209, 233, 253);">
+  <form [formGroup]="personneForm" (ngSubmit)="onSave()" class="fiche">
     <div class="mb-3">
       <label for="nom" class="form-label">Nom</label>
       <input type="text" class="form-control" id="nom" formControlName="nom">
@@ -32,6 +32,6 @@
         <label for="email" class="form-label">Adresse mail</label>
         <input type="email" class="form-control" id="email" formControlName="email">
       </div>
-    <input type="submit" (click)="onSave()" value="Enregister">
-  </form>
+    <input type="submit" (click)="onSave()" value="Enregister" class="btn btn-success">
+  </form><br>
 
