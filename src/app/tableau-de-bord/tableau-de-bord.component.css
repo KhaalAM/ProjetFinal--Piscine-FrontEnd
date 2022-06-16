@@ -22,6 +22,8 @@ main {
 .header{
   position: relative;
   top: 10px;
+  width: 90%;
+  margin-left: 150px;
 }
 
 header{

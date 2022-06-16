@@ -1,6 +1,14 @@
 .container {
   float: right;
-  padding: 2%;
+  padding-top: 2%;
+}
+
+.decale{
+  margin-left: 300px;
+}
+
+.centre {
+  justify-content: space-evenly;
 }
 
 img {
