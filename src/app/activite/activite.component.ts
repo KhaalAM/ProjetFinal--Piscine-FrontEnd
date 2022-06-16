@@ -6,11 +6,11 @@ import { ActiviteService } from '../service/activite.service';
 import { PersonneService } from '../service/personne.service';
 
 @Component({
-  selector: 'app-inscription-activite',
-  templateUrl: './inscription-activite.component.html',
-  styleUrls: ['./inscription-activite.component.css']
+  selector: 'app-activite',
+  templateUrl: './activite.component.html',
+  styleUrls: ['./activite.component.css']
 })
-export class InscriptionActiviteComponent implements OnInit {
+export class ActiviteComponent implements OnInit {
 
   idActivite!: number;
   activite$!: Observable<Activite>;
@@ -18,16 +18,17 @@ export class InscriptionActiviteComponent implements OnInit {
   constructor(private activiteService:ActiviteService, private personneService:PersonneService, private router:Router, private activatedRoute : ActivatedRoute) {
     this.idActivite = activatedRoute.snapshot.params['idActivite']
     console.log("idActivité : " + this.idActivite)
-   }
+  }
 
   ngOnInit(): void {
     this.activite$=this.activiteService.getActiviteById(this.idActivite);
-  }
-
-  paiementActivite(idActivite:number):void{
-    
-    this.router.navigateByUrl("/paiementActivite/" + this.idActivite)
 
   }
+
+   onSubmit()
+  {
+    this.router.navigateByUrl("/inscriptionActivite/" + this.idActivite)
+  }
+
 
 }

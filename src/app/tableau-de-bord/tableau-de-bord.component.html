@@ -1,41 +1,115 @@
 <main>
-  <div class="container">
-  <header> 
-  Test de l'Header
-  </header>
-
-  <article>
-  Test de l'Article
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" class="d-block w-50" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" class="d-block w-50" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" class="d-block w-50" alt="...">
+  <header class="header"> 
+    <div class="card">
+      <div class="card-body">
+        <h1> Complexe Nautique INTI Formation</h1>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </header>
+
+  <article class="w-75">
+    <div id="carouselExampleCaptions" class="carousel slide centre" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </article>
   
   
   <aside>
-  Test du Aside
+    <div class="card" style="width: 28rem;">
+      <div class="card-body">
+        <h3 class="card-title">Renseignements</h3>
+        <p class="card-text">Téléphone : 04.01.02.03.04</p>
+      </div>
+    </div>
+<br>
+    <div class="card" style="width: 28rem;">
+      <div class="card-body">
+        <h3 class="card-title">Accueil du public</h3>
+        <h5 class="card-subtitle mb-2 text-muted">hors vacances scolaires</h5>
+        <p class="card-text">
+          - Lundi, mardi, mercredi, jeudi & vendredi de 8h à 20h*<br>
+          - Samedi de 8h à 16h*<br>
+          - Fermé le dimanche<br>
+        </p>
+        <p class="font-italic">(*) La fermeture de l'établissement s'effectue 15 minutes après la sortie de l'eau</p>  
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 28rem;">
+      <div class="card-body">
+        <h3 class="card-title">Conditions d'accés</h3>
+        <p class="card-text">- Une douche savonnée est obligatoire avant tout accès aux bassins</p>
+        <p class="card-text">- Désinfection du matériel de nage dans les bacs mise à disposition du public</p>
+        <p class="card-text">- Port d'un bonnet de bain obligatoire</p>
+        <p class="card-text">| Accès au bassin des enfants  de moins de 10 ans : <br>
+        obligation d'être accompagné d'un majeur d'au moins 18 ans, en maillot de bain.</p>
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 28rem;">
+      <div class="card-body">
+        <h3 class="card-title">Tests de natation</h3>
+        <p class="card-text">
+          Uniquement sur réservation  > <a href="ficheInscriptionClient" class="card-link">en ligne</a>
+          Les tests restent sous réservation afin d'éviter les encombrements
+          
+          Test les lundis et vendredis de 18h à 19h, et les mercredis de 14h à 16h, sur présentation d'une pièce d'identité.</p>
+      </div>
+    </div>
   </aside>
   
+
+
   <footer>
-  Test du Footer
+    <div class="card">
+      <div class="card-body">
+        <h3>Contact</h3>
+      </div>
+    </div>
   </footer>
-</div>
-</main>
+  </main>
+  <app-router></app-router>

@@ -42,4 +42,8 @@ export class ActiviteService {
     return this.httpClient.get<Activite[]>(environment.urlE+"listActivitiesSameName/"+ nomActivite )
   }
 
+  getListeEachActivityType():Observable<string[]>{
+    return this.httpClient.get<string[]>(environment.urlE+"listEachActivityType")
+  }
+
 }
