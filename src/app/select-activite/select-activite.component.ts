@@ -16,7 +16,7 @@ export class SelectActiviteComponent implements OnInit {
   constructor(private activiteService:ActiviteService, private router:Router, private activatedRoute : ActivatedRoute) {
     this.nomActivite = activatedRoute.snapshot.params['nomActivite']
     console.log("nomActivité : " + this.nomActivite)
-   }
+  }
 
   ngOnInit(): void {
    this.listeActivite$=this.activiteService.getListActivitiesSameName(this.nomActivite);
@@ -26,5 +26,4 @@ export class SelectActiviteComponent implements OnInit {
   {
     this.router.navigateByUrl("/descriptionActivite/" + idActivite)
   }
-
 }

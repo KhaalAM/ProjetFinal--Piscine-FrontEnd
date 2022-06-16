@@ -17,15 +17,12 @@ export class ActivitesComponent implements OnInit {
 
   ngOnInit(): void {
     //METHODE EN PASSANT PAR LE BACK car je ne vois pas encore comment rentrer une liste d'activités en brut dans l'observable
-    this.listeNomActivites$=this.activiteService.getListeEachActivityType() 
+    this.listeNomActivites$=this.activiteService.getListeEachActivityType()
     // on va chercher a récupérer tous les noms d'activités possibles et les stocker dans des Activités vides avec seulement le nom
-
-
   }
 
   goListSameName(nomActivite: string)
   {
     this.router.navigateByUrl("affichageListeActiviteMemeNom/" + nomActivite)
   }
-
 }
