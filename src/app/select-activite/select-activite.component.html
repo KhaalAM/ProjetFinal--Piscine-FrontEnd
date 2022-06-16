@@ -1,10 +1,11 @@
-<table class="table table-primary">
+<table class="table table-primary w-75 center">
     <thead>
       <tr>
         <th scope="col">Heure de début</th>
         <th scope="col">Heure de fin</th>
         <th scope="col">Nombre de places</th>
         <th scope="col">Tarif (hors abonnement)</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -14,7 +15,7 @@
         <td>{{a.nbrPlaces}}</td>
         <td>{{a.prix}}</td>
         <td>
-          <button  class="btn btn-success" (click) ="onSubmit(a.idActivite)">S'inscrire</button>  
+          <button  class="btn btn-success" (click) ="onSubmit(a.idActivite)">Réserver</button>
       </td>
       </tr>
     </tbody>
