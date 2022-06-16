@@ -5,21 +5,19 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { FicheInscriptionClientComponent } from './fiche-inscription-client/fiche-inscription-client.component';
 import { HorairesComponent } from './horaires/horaires.component';
-
 import { InscriptionAquaBikeComponent } from './inscription-aqua-bike/inscription-aqua-bike.component';
 import { InscriptionAquaGymComponent } from './inscription-aqua-gym/inscription-aqua-gym.component';
 import { InscriptionCoursNatationComponent } from './inscription-cours-natation/inscription-cours-natation.component';
 import { InscriptionPlongeeComponent } from './inscription-plongee/inscription-plongee.component';
-
 import { MenuComponent } from './menu/menu.component';
 import { PlanningComponent } from './planning/planning.component';
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component';
-
 import { InscriptionActiviteComponent } from './inscription-activite/inscription-activite.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SelectActiviteComponent } from './select-activite/select-activite.component';
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
+
 
 
 const routes: Routes = [

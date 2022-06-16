@@ -6,12 +6,13 @@
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 24px;
+  grid-gap: 45px;
   grid-template-areas:
   "header header"
   "article aside"
   "footer footer";
 }
+
 
 
 
@@ -24,6 +25,6 @@ grid-area:article;
 }
 
 footer{
-grid-area:footer;
-
-}
+  grid-area:footer;
+  
+  }

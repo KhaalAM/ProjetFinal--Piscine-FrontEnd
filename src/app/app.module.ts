@@ -39,6 +39,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +63,8 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     PageNotFoundComponent,
     InscriptionActiviteComponent,
     PaiementActiviteComponent,
-    SelectActiviteComponent
+    SelectActiviteComponent,
+  
 
   ],
   imports: [
