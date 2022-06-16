@@ -24,4 +24,10 @@ export class InscriptionActiviteComponent implements OnInit {
     this.activite$=this.activiteService.getActiviteById(this.idActivite);
   }
 
+  paiementActivite(idActivite:number):void{
+    
+    this.router.navigateByUrl("/paiementActivite/" + this.idActivite)
+
+  }
+
 }
