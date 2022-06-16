@@ -16,11 +16,15 @@
   </div>
 <br>
 
+
   <div class="card">
     <p class="honor">
-      Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}} <br>
+      
+      Jour : {{ activite.horaireDebut |date: 'dd/MM/yy'}} <br>
+      Horaires : de {{activite.horaireDebut | date: 'HH:mm' }} à {{activite.horaireFin | date: 'HH:mm'}} <br>
       Prix (hors Abonnement): {{activite.prix}} € <br>
-      Places restantes : {{activite.nbrPlaces}} <br>
+      Places totales : {{activite.nbrPlaces}} <br> <!-- pour les places restantes il faudrait mettre un compteur à la place, mais pour cela il faut lier client a activite et donc mettre les authentification :/ -->
+
     </p>
     <br>
     <button  class="btn btn-success" (click) ="onSubmit()">Réserver</button>

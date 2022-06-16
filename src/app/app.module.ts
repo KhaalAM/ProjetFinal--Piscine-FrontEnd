@@ -57,6 +57,7 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     ActiviteComponent,
     SelectActiviteComponent
 
+
   ],
   imports: [
     BrowserModule,

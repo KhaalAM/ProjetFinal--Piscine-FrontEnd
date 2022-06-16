@@ -5,6 +5,8 @@ import { environment } from 'src/environments/environment';
 import { Planning } from '../model/planning.model';
 
 import {DayPilot} from "@daypilot/daypilot-lite-angular";
+import { ActiviteService } from './activite.service';
+import { Activite } from '../model/activite.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,16 +15,27 @@ export class PlanningService {
  
 
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient, private activiteService:ActiviteService) { }
+
+  // events: any[] = [
+  //   {
+  //     id: "1",
+  //     start: DayPilot.Date.today().addHours(10),
+  //     end: DayPilot.Date.today().addHours(12),
+  //     text: "Cours Natation"
+  //   }
+  // ];
 
   events: any[] = [
-    {
-      id: "1",
-      start: DayPilot.Date.today().addHours(10),
-      end: DayPilot.Date.today().addHours(12),
-      text: "Cours Natation"
-    }
-  ];
+     {
+       id: "1",
+       start: "2022-06-20T08:00:00",
+       end: "2022-06-20T10:00:00",
+        text: "Aquagym"
+      }
+   ];
+  
+
 
   /*getEvents(from: DayPilot.Date, to: DayPilot.Date): Observable<any[]> {
 
