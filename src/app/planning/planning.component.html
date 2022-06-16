@@ -8,9 +8,9 @@
     </div>
     <div class="content">
       <div class="buttons">
-      <button (click)="viewJour()" [class]="this.configNavigator.selectMode == 'Day' ? 'selected' : ''">Jour</button>
+      <!--<button (click)="viewJour()" [class]="this.configNavigator.selectMode == 'Day' ? 'selected' : ''">Jour</button>-->
       <button (click)="semaine()" [class]="this.configNavigator.selectMode == 'Week' ? 'selected' : ''">Semaine</button>
-      <button (click)="Mois()" [class]="this.configNavigator.selectMode == 'Month' ? 'selected' : ''">Mois</button>
+      <!--<button (click)="Mois()" [class]="this.configNavigator.selectMode == 'Month' ? 'selected' : ''">Mois</button>-->
       </div>
 
       <daypilot-calendar [config]="configDay" [events]="events" #day></daypilot-calendar>
