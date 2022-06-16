@@ -1,12 +1,12 @@
 <head></head>
 
-<div class="row row-cols-1 row-cols-md-3 g-4 activites centre">
+<div class="row row-cols-1 row-cols-md-3 g-4 activites centre d-flex align-items-stretch">
 
    <div *ngFor="let nomActivite of listeNomActivites$ | async" class="col">
-      <div class="card h-20 container">
+      <div class="card h-100 container">
         <img src="/assets/images/{{nomActivite}}.PNG" class="card-img-top" alt="{{nomActivite}}">
         <div class="card-body">
-          <h1 class="card-title">Cours de {{nomActivite}}</h1>
+          <h1 class="card-title">{{nomActivite}}</h1>
           <p *ngIf="nomActivite==='Lecon personnelle'" class="card-text">La natation sportive consiste à parcourir dans une piscine, le plus rapidement possible et dans un style codifié par la Fédération internationale de natation, une distance donnée, sans l'aide d'aucun accessoire. La natation sportive peut être pratiquée à tout âge.</p>
           <p *ngIf="nomActivite==='Aquagym'" class="card-text">L'aquagym est la performance d'un exercice aérobie dans l'eau comme dans une piscine. Fait principalement verticalement et sans nager généralement dans des eaux profondes ou plus profondes, c'est un type d'entraînement en résistance.</p>
           <p *ngIf="nomActivite==='Aquabike'" class="card-text">L'aquabike en tant que pratique sportive enchaînée et gérée par la Fédération internationale de triathlon est un sport dérivé du triathlon. Il enchaîne sans interruption, une partie natation en eaux vives et de cyclisme sur route. Il se pratique sur courte, moyenne et longue distance.</p>
@@ -18,14 +18,14 @@
           <p *ngIf="nomActivite==='Waterpolo'" class="card-text">Un sport d’équipe, qui nécessite rapidité, adresse et endurance, pour lequel deux équipes de 7 joueurs s’opposent dans une piscine avec un ballon. Objectif : marquer plus de buts que les adversaires!</p>
 
          </div>
-        <div class="d-grid gap-2 col-6 mx-auto">       
+        <div class="d-grid gap-2 col-6 mx-auto">
           <button type="button" class="btn-primary btn btn-sm" (click)="goListSameName(nomActivite)">S'inscrire</button>
           <!-- <button type="button" class="btn-info btn btn-sm" routerLink= "/infosNatation">Plus d'informations</button> -->
         </div>
       </div>
    </div>
 
-<!-- 
+<!--
    <div *ngFor="let nomActivite of listeNomActivites$ | async" class="container">
       <div class="image">
          <img src="/assets/images/{{nomActivite}}.PNG" class="img" alt="{{nomActivite}}" style="width:50%">
