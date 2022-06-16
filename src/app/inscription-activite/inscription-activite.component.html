@@ -23,8 +23,14 @@
     </p>
   </div>
 
-  <!--ON RAJOUTERA ICI DES CHAMPS RELATIFS AU CLIENT-->
-  
-  <button  class="btn btn-success" (click) =" paiementActivite(activite.idActivite)">S'inscrire</button>
+    <!--ON RAJOUTERA ICI DES CHAMPS RELATIFS AU CLIENT-->
+  personne.prenom
+  personne.nom
+  personne.typeAbonnement
+
+
+  <!-- ngIf personne.typeAbonnement...   ON Changera le bouton afficher afin de soit valider directement l'inscription si abonné soit rediriger à la page de paiement--> 
+
+  <button  class="btn btn-success" (click) =" paiementActivite(activite.idActivite)">Procéder au paiement</button>
   <!--Ajouter authentification-->
 </div>
