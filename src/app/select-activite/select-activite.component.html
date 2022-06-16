@@ -10,8 +10,8 @@
     </thead>
     <tbody>
       <tr *ngFor ="let a of listeActivite$ | async"> <!-- PAS OUBLIER DE METTRE async quand notre liste est un observable-->
-        <td>{{a.horaireDebut}}</td>
-        <td>{{a.horaireFin}}</td>
+        <td>{{a.horaireDebut | date: 'dd/MM/yy, à HH:mm'}}</td>
+        <td>{{a.horaireFin | date: 'dd/MM/yy, à HH:mm'}}</td>
         <td>{{a.nbrPlaces}}</td>
         <td>{{a.prix}}</td>
         <td>
