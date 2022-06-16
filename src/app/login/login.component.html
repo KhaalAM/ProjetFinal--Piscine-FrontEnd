@@ -1,13 +1,26 @@
-<br><div class="constainer2 fiche">
-  <form #loginForm="ngForm" (ngSubmit) ="connexion()">
+
+
+<div class="block">
+
+<div class="login">
+
+    <div class="login-description-bk"></div>
+
+
+    <form #loginForm="ngForm" (ngSubmit) ="connexion()">
       <div class="form-group">
-        <label for="username">Nom d'utilisateur</label>
+        <label for="username" style="color:aliceblue ;"><b>Nom d'utilisateur</b></label>
         <input type="username" class="form-control" id="username" name="username" [(ngModel)] = "username">
       </div>
       <div class="form-group">
-        <label for="password">Mot de passe</label>
+        <label for="password" style="color:aliceblue ;"><b>Mot de passe</b></label>
         <input type="password" class="form-control" id="password" name="password" [(ngModel)] = "password">
-      </div><br>
-      <button type="submit" class="btn btn-success">Se connecter</button>
+      </div>
+
+    <div class="login-btn">
+        <button type="submit" class="btn btn-bg-transparent" style="color: rgb(237, 247, 252);">Se connecter</button>
+    </div>
   </form>
-</div><br>
+</div>
+</div>
+
