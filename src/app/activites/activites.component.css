@@ -11,13 +11,12 @@
 
 img {
   border: 2px solid black;
-  width: 400px;
-  height: 240px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   display: block;
   margin : auto;
-  
 }
-
 
 .activites {
   justify-content: space-evenly;
@@ -27,14 +26,8 @@ img {
   flex-wrap: wrap;
   align-content: flex-start;
   height: fit-content;
-
 }
 
-.block1{
-
-float: right;
-margin-right: 100px;
-position: absolute;
-
-
+.card-text{
+  font-size:17px;
 }
