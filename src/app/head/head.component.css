@@ -1,54 +1,33 @@
-
 .navbar{
-    border: solid black 3px;
-    width: 100%;
- 
+  border: solid black 3px;
+  width: 100%;
 }
 
-
-
 #inscription {
-    float: right;
+  float: right;
+}
 
-    
+#seConnecter {
+  float: right;
+}
 
- }
-
-
- #seConnecter {
-    float: right;
-    
-     
-    
-
- }
-
-
- #menu{
-
-    width: 100px;
-    position:absolute;
-    margin-left:200px;
-    top: 1px;
- }
-
-
-
+#menu{
+  width: 100px;
+  position:absolute;
+  margin-left:200px;
+  top: 1px;
+}
 
 .btn-primary{
-  
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-  }
-  
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
 
-
-  .logo{
-    border-radius: 50%;
-    width: 20%;
-    float: right;
-    margin-right: 20px;
-    
-  }
+.logo{
+  border-radius: 50%;
+  width: 20%;
+  float: right;
+  margin-right: 20px;
+}

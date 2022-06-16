@@ -1,23 +1,24 @@
-<br><table class="table table-primary w-75 center">
-    <thead>
-      <tr>
-        <th scope="col">Heure de début</th>
-        <th scope="col">Heure de fin</th>
-        <th scope="col">Nombre de places</th>
-        <th scope="col">Tarif (hors abonnement)</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor ="let a of listeActivite$ | async"> <!-- PAS OUBLIER DE METTRE async quand notre liste est un observable-->
-        <td>{{a.horaireDebut | date: 'dd/MM/yy, à HH:mm'}}</td>
-        <td>{{a.horaireFin | date: 'dd/MM/yy, à HH:mm'}}</td>
-        <td>{{a.nbrPlaces}}</td>
-        <td>{{a.prix}}</td>
-        <td>
-          <button  class="btn btn-success" (click) ="onSubmit(a.idActivite)">Réserver</button>
+<br>
+<table class="table table-primary w-75" style=" margin-left: auto; margin-right: auto">
+  <thead>
+    <tr>
+      <th scope="col">Heure de début</th>
+      <th scope="col">Heure de fin</th>
+      <th scope="col">Nombre de places</th>
+      <th scope="col">Tarif (hors abonnement)</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let a of listeActivite$ | async"> <!-- PAS OUBLIER DE METTRE async quand notre liste est un observable-->
+      <td>{{a.horaireDebut | date: 'dd/MM/yy, à HH:mm'}}</td>
+      <td>{{a.horaireFin | date: 'dd/MM/yy, à HH:mm'}}</td>
+      <td>{{a.nbrPlaces}}</td>
+      <td>{{a.prix}}</td>
+      <td>
+        <button  class="btn btn-success" (click) ="onSubmit(a.idActivite)">Réserver</button>
       </td>
-      </tr>
-    </tbody>
+    </tr>
+  </tbody>
 </table>
 

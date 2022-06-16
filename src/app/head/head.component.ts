@@ -11,18 +11,12 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class HeadComponent implements OnInit {
   @Input() inputSideNav!:MatSidenav;
-  
-  constructor(private location: Location) { }
- 
-  ngOnInit(): void {
-  }
 
+  constructor(private location: Location) { }
+
+  ngOnInit(): void {}
 
   retour() {
-    this.location.back(); 
-
-
-
-}
-
+    this.location.back();
+  }
 }

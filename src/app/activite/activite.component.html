@@ -1,7 +1,6 @@
-
 <br><div *ngIf="activite$ | async as activite" class="container">
 
-  <h1><mark>{{activite.nomActivite}}</mark></h1>
+  <h1><mark class="card">{{activite.nomActivite}}</mark></h1>
   <div class="card">
     <img src="/assets/images/{{activite.nomActivite}}.PNG" class="img" alt="{{activite.nomActivite}}" style="width:100%">
     <p *ngIf="activite.nomActivite==='Lecon personnelle'" class="card-text honor">La natation sportive consiste à parcourir dans une piscine, le plus rapidement possible et dans un style codifié par la Fédération internationale de natation, une distance donnée, sans l'aide d'aucun accessoire. La natation sportive peut être pratiquée à tout âge.</p>
@@ -16,15 +15,12 @@
   </div>
 <br>
 
-
   <div class="card">
     <p class="honor">
-      
       Jour : {{ activite.horaireDebut |date: 'dd/MM/yy'}} <br>
       Horaires : de {{activite.horaireDebut | date: 'HH:mm' }} à {{activite.horaireFin | date: 'HH:mm'}} <br>
       Prix (hors Abonnement): {{activite.prix}} € <br>
       Places totales : {{activite.nbrPlaces}} <br> <!-- pour les places restantes il faudrait mettre un compteur à la place, mais pour cela il faut lier client a activite et donc mettre les authentification :/ -->
-
     </p>
     <br>
     <button  class="btn btn-success" (click) ="onSubmit()">Réserver</button>
