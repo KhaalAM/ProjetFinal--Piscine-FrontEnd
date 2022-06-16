@@ -1,6 +1,6 @@
 <div *ngIf="activite$ | async as activite" class="container">
   <h1>{{activite.nomActivite}}</h1>
-  <div>
+  <div class="cadre" >
 
     <img src="/assets/images/{{activite.nomActivite}}.PNG" class="img" alt="{{activite.nomActivite}}" style="width:50%">
     <p *ngIf="activite.nomActivite==='Lecon personnelle'" class="card-text">La natation sportive consiste à parcourir dans une piscine, le plus rapidement possible et dans un style codifié par la Fédération internationale de natation, une distance donnée, sans l'aide d'aucun accessoire. La natation sportive peut être pratiquée à tout âge.</p>
@@ -14,6 +14,9 @@
     <p *ngIf="activite.nomActivite==='Waterpolo'" class="card-text">Un sport d’équipe, qui nécessite rapidité, adresse et endurance, pour lequel deux équipes de 7 joueurs s’opposent dans une piscine avec un ballon. Objectif : marquer plus de buts que les adversaires!</p>
 
   </div>
+
+
+  
 
   <div>
     <p>

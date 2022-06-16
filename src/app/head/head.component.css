@@ -1,5 +1,5 @@
 
-#navbar{
+.navbar{
     border: solid black 3px;
     width: 100%;
  
@@ -8,22 +8,17 @@
 
 
 #inscription {
-    /*align: right;*/
-    
-     position: relative;
-     top: 1px;
-     left: 800px;
+    float: right;
+
     
 
  }
 
 
  #seConnecter {
-    /*align: right;*/
+    float: right;
     
-     position: relative;
-     top: 1px;
-     left: 800px;
+     
     
 
  }
@@ -31,7 +26,29 @@
 
  #menu{
 
-
-position:relative;
-margin-left:300px
+    width: 100px;
+    position:absolute;
+    margin-left:200px;
+    top: 1px;
  }
+
+
+
+
+.btn-primary{
+  
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  
+
+
+  .logo{
+    border-radius: 50%;
+    width: 20%;
+    float: right;
+    margin-right: 20px;
+    
+  }
