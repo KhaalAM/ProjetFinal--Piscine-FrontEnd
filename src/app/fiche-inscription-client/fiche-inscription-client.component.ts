@@ -31,6 +31,12 @@ export class FicheInscriptionClientComponent implements OnInit {
     this.personneService.addPersonne(this.personneForm.value).subscribe()
 
     this.router.navigate(['']);
+    alert("Vous avez bien été enregistré sur notre site!");
+
+  }
+  alert(){
+    alert("Vous avez bien été enregistré");
+
 
   }
 
