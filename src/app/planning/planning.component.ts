@@ -22,7 +22,7 @@ export class PlanningComponent implements AfterViewInit {
 
 
   events: DayPilot.EventData[] = [];
-  date = DayPilot.Date.today();
+  date = DayPilot.Date.today().addDays(4);
 
   //definit la taille des mois Affichés en petit 
   configNavigator: DayPilot.NavigatorConfig = {
