@@ -26,6 +26,11 @@ header{
   grid-area:header;
 }
 
+.captions{
+color: blue;
+font-weight: bold;
+}
+
 aside{
 grid-area:aside;
 }
@@ -37,4 +42,8 @@ grid-area:article;
 footer{
 grid-area:footer;
 
+}
+
+.card{
+  background-color:rgb(209, 233, 253)
 }

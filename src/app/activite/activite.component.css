@@ -1,0 +1,19 @@
+.honor{
+    margin: 20px;
+}
+
+.img{
+    padding: 20px;
+
+}
+
+mark{
+    margin: 20px;
+    background-color: rgb(209, 233, 253);
+    color: black;
+}
+
+.card {
+  background-color: rgb(209, 233, 253);
+  width: 600px
+}

@@ -1,37 +1,50 @@
-<br>
-  <form [formGroup]="personneForm" (ngSubmit)="onSave()">
-    <div class="mb-3">
-      <label for="nom" class="form-label">Nom</label>
-      <input type="text" class="form-control" id="nom" formControlName="nom">
-    </div>
-    <div class="mb-3">
-        <label for="prenom" class="form-label">Prénom</label>
-        <input type="text" class="form-control" id="prenom" formControlName="prenom">
-      </div>
-    <div class="mb-3">
-      <label for="username" class="form-label">Nom d'utilisateur</label>
-      <input type="text" class="form-control" id="username" formControlName="username">
-    </div>
-    <div class="mb-3">
-      <label for="password" class="form-label">Mot de passe</label>
-      <input type="password" class="form-control" id="password" formControlName="password">
-    </div>
-    <div class="mb-3">
-      <label for="dateNaissance" class="form-label">Date de naissance</label>
-      <input type="date" class="form-control" id="dateNaissance" formControlName="dateNaissance">
-    </div>
-    <div class="mb-3">
-        <label for="adresse" class="form-label">Adresse</label>
-        <input type="text" class="form-control" id="adresse" formControlName="adresse">
-      </div>
-      <div class="mb-3">
-        <label for="telephone" class="form-label">Numéro de téléphone</label>
-        <input type="text" class="form-control" id="telephone" formControlName="telephone">
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Adresse mail</label>
-        <input type="email" class="form-control" id="email" formControlName="email">
-      </div>
-    <input type="submit" (click)="onSave()" value="Enregister">
-  </form>
+  <div class="block">
 
+    <div class="login">
+
+        <div class="login-description-bk"></div>
+
+        <form [formGroup]="personneForm" (ngSubmit)="onSave()" style="color: aliceblue;">
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" formControlName="nom">
+          </div>
+          <div class="mb-3">
+              <label for="prenom" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="prenom" formControlName="prenom">
+            </div>
+          <div class="mb-3">
+            <label for="username" class="form-label">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="username" formControlName="username">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+          </div>
+          <div class="mb-3">
+            <label for="dateNaissance" class="form-label">Date de naissance</label>
+            <input type="date" class="form-control" id="dateNaissance" formControlName="dateNaissance">
+          </div>
+          <div class="mb-3">
+              <label for="adresse" class="form-label">Adresse</label>
+              <input type="text" class="form-control" id="adresse" formControlName="adresse">
+            </div>
+            <div class="mb-3">
+              <label for="telephone" class="form-label">Numéro de téléphone</label>
+              <input type="text" class="form-control" id="telephone" formControlName="telephone">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse mail</label>
+              <input type="email" class="form-control" id="email" formControlName="email">
+            </div>
+
+
+
+
+        <div class="login-btn">
+            <button type="submit" class="btn btn-bg-transparent" (click)="onSave()" value="Enregister"style="color: rgb(237, 247, 252);">Enregister</button>
+
+        </div>
+      </form>
+    </div>
+    </div>
