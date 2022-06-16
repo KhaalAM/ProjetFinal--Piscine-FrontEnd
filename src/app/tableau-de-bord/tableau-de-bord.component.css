@@ -28,6 +28,10 @@ header{
   grid-area:header;
 }
 
+.captions{
+color: blue;
+font-weight: bold;
+}
 
 aside{
 grid-area:aside;

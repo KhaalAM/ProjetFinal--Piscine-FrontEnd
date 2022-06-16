@@ -2,8 +2,8 @@
     float: right;
     margin-right: 400px;
   }
-  
-  
+
+
   .login {
     display: inline-block;
     position: relative;
@@ -16,11 +16,12 @@
     margin: 20px;
     
     border: solid black 3px;
-  
+
   }
   
 
-  
+
+
   .login-btn {
     position: absolute;
     color: #fff;
@@ -29,14 +30,14 @@
     padding: 4px 4px;
     border: 1px solid #fff;
   }
-  
+
   .login-btn a {
     color: #fff;
   }
-  
 
-  
-  
+
+
+
   body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;

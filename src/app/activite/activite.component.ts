@@ -15,7 +15,7 @@ export class ActiviteComponent implements OnInit {
   idActivite!: number;
   activite$!: Observable<Activite>;
 
-  constructor(private activiteService:ActiviteService, private personneService:PersonneService, private router:Router, private activatedRoute : ActivatedRoute) {
+  constructor(private activiteService:ActiviteService, private router:Router, private activatedRoute : ActivatedRoute) {
     this.idActivite = activatedRoute.snapshot.params['idActivite']
     console.log("idActivité : " + this.idActivite)
   }
