@@ -34,6 +34,11 @@ export class FicheInscriptionClientComponent implements OnInit {
     alert("Vous avez bien été enregistré sur notre site!");
 
   }
+  alert(){
+    alert("Vous avez bien été enregistré");
+
+
+  }
 
 
 }
