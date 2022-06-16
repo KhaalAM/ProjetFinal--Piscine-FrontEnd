@@ -1,7 +1,7 @@
 <div *ngIf="activite$ | async as activite" class="container">
   
   <h1><mark>{{activite.nomActivite}}</mark></h1>
-  <div class="card " style="width: 600px">
+  <div class="card">
     <img src="/assets/images/{{activite.nomActivite}}.PNG" class="img" alt="{{activite.nomActivite}}" style="width:100%">
     <p *ngIf="activite.nomActivite==='Lecon personnelle'" class="card-text honor">La natation sportive consiste à parcourir dans une piscine, le plus rapidement possible et dans un style codifié par la Fédération internationale de natation, une distance donnée, sans l'aide d'aucun accessoire. La natation sportive peut être pratiquée à tout âge.</p>
     <p *ngIf="activite.nomActivite==='Aquagym'" class="card-text honor">L'aquagym est la performance d'un exercice aérobie dans l'eau comme dans une piscine. Fait principalement verticalement et sans nager généralement dans des eaux profondes ou plus profondes, c'est un type d'entraînement en résistance.</p>
@@ -15,7 +15,8 @@
   </div>
 <br>
 
-  <div class="card" style="width: 600px">
+
+  <div class="card">
     <p class="honor">
       Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}} <br>
       Prix (hors Abonnement): {{activite.prix}} € <br>
@@ -25,14 +26,14 @@
   <br>
 
     <!--ON RAJOUTERA ICI DES CHAMPS RELATIFS AU CLIENT-->
-  
+
     <div *ngIf="personne$ | async as personne" class="container">
     <p></p> personne.prenom
     <p></p> personne.nom
     <p></p> personne.typeAbonnement
   </div>
 
-  <!-- ngIf personne.typeAbonnement...   ON Changera le bouton afficher afin de soit valider directement l'inscription si abonné soit rediriger à la page de paiement--> 
+  <!-- ngIf personne.typeAbonnement...   ON Changera le bouton afficher afin de soit valider directement l'inscription si abonné soit rediriger à la page de paiement-->
 
   <button  class="btn btn-success" (click) =" paiementActivite(activite.idActivite)">Procéder au paiement</button>
   <!--Ajouter authentification-->
