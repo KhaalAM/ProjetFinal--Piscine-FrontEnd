@@ -16,22 +16,27 @@
 <br>
 
 
+
   <div class="card">
     <p class="honor">
-      Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}} <br>
+      Jour : {{ activite.horaireDebut | date: 'dd/MM/yy'}} <br>
+      Horaires : de {{activite.horaireDebut | date: 'HH:mm' }} à {{activite.horaireFin | date: 'HH:mm'}}<br>
       Prix (hors Abonnement): {{activite.prix}} € <br>
-      Places restantes : {{activite.nbrPlaces}} <br>
+      Places totales : {{activite.nbrPlaces}} <br> <!-- pour les places restantes il faudrait mettre un compteur à la place, mais pour cela il faut lier client a activite et donc mettre les authentification :/ -->
+
     </p>
   </div>
   <br>
 
     <!--ON RAJOUTERA ICI DES CHAMPS RELATIFS AU CLIENT-->
 
+
     <div *ngIf="personne$ | async as personne" class="container">
     <p></p> personne.prenom
     <p></p> personne.nom
     <p></p> personne.typeAbonnement
   </div>
+
 
   <!-- ngIf personne.typeAbonnement...   ON Changera le bouton afficher afin de soit valider directement l'inscription si abonné soit rediriger à la page de paiement-->
 
