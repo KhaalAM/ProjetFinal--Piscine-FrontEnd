@@ -1,11 +1,18 @@
+
+.honor{
+    margin: 20px;
+}
+
 .img{
+    padding: 20px;
+  float:right
+margin-right 10px; 
 
+}
 
-
-float:right
-margin-right 10px; /* marge en pixel à droite de la photo */
-
-
-
+mark{
+    margin: 20px;
+    background-color: white;
+    color: black;
 }
 
