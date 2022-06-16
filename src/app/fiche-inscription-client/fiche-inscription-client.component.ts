@@ -33,6 +33,11 @@ export class FicheInscriptionClientComponent implements OnInit {
     this.router.navigate(['']);
 
   }
+  alert(){
+    alert("Vous avez bien été enregistré");
+
+
+  }
 
 
 }
