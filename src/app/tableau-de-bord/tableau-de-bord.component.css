@@ -36,6 +36,10 @@ grid-area:article;
 }
 
 footer{
-  grid-area:footer;
-  
-  }
+grid-area:footer;
+
+}
+
+.card{
+  background-color:rgb(209, 233, 253)
+}
