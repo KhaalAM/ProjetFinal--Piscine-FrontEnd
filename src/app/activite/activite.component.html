@@ -17,7 +17,8 @@
 
   <div>
     <p>
-      Horaires : de {{activite.horaireDebut}} à {{activite.horaireFin}}
+      Jour : {{ activite.horaireDebut |date: 'dd/MM/yy'}}
+      Horaires : de {{activite.horaireDebut | date: 'HH:mm' }} à {{activite.horaireFin | date: 'HH:mm'}}
       Prix (hors Abonnement): {{activite.prix}} €
       Places restantes : {{activite.nbrPlaces}} <!-- il faudrait mettre un comteur à la place -->
     </p>
