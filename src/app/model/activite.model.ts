@@ -4,5 +4,5 @@ export class Activite {
   nbrPlaces!:number
   horaireDebut!:Date
   horaireFin!:Date
-  prix!: number
+  prix!:number
 }

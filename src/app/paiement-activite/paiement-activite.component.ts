@@ -20,8 +20,7 @@ export class PaiementActiviteComponent implements OnInit {
 //On verra plus tard comment on gère l'authentification, mais ca devrait pouvoir marcher en faisant passer le username ou l'id du client
 
  // id!: number;
- // personne$! : Observable<Personne>; 
-  
+ // personne$! : Observable<Personne>;
 
   constructor( private activiteService:ActiviteService, private personneService:PersonneService, private router:Router, private activatedRoute : ActivatedRoute) {
 
@@ -30,22 +29,21 @@ export class PaiementActiviteComponent implements OnInit {
 
     this.idActivite = activatedRoute.snapshot.params['idActivite']
     console.log("idActivité : " + this.idActivite)
-   }
+  }
 
-  
+
   ngOnInit() {
-   
+
     //OBJECTIF : Réussir à récupérer l'object à partir de son ID, pour avoir accès à son prix et pouvoir le mettre en argument dans la fonction initializePayment!
 
     this.activite$=this.activiteService.getActiviteById(this.idActivite);
-    
-    // this.activite$.subscribe(); pas besoin vu qu'on a précisé le async dans le html
 
+    // this.activite$.subscribe(); pas besoin vu qu'on a précisé le async dans le html
 
     //this.personne$=this.personneService.getPersonneById(this.id);
     this.invokeStripe();
   }
-  
+
   initializePayment(amount : number) {
     const paymentHandler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_51LA92TLWekqBRLkE92Soc0xfdUhdaJXQq09hMYqWEyoaZV7vpv0JvTGzDUXdGGI0oXD5KZ0fLWJcWnU5rTPm6IyU00UgNQAN7B',
@@ -55,14 +53,14 @@ export class PaiementActiviteComponent implements OnInit {
         alert('Stripe token generated!');
       }
     });
-  
+
     paymentHandler.open({
       name: "PiscineMunicipale",
       description: "Paiement de l'activité",
       amount: amount * 100  /* car de base la fonction raisonne sur des centimes*/
     });
   }
-  
+
   invokeStripe() {
     if(!window.document.getElementById('stripe-script')) {
       const script = window.document.createElement("script");
@@ -82,5 +80,4 @@ export class PaiementActiviteComponent implements OnInit {
       window.document.body.appendChild(script);
     }
   }
-
 }

@@ -22,13 +22,10 @@ export class ActiviteComponent implements OnInit {
 
   ngOnInit(): void {
     this.activite$=this.activiteService.getActiviteById(this.idActivite);
-
   }
 
    onSubmit()
   {
     this.router.navigateByUrl("/inscriptionActivite/" + this.idActivite)
   }
-
-
 }

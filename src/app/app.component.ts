@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-  
+
 })
 export class AppComponent {
   title = 'ProjetFinal--Piscine-FrontEnd';
@@ -19,13 +19,8 @@ export class AppComponent {
   ngOnInit() {
     this.router.navigate([''])
   }
-  
 
   retour() {
-    this.location.back(); 
-
-
-
-}
-
+    this.location.back();
+  }
 }

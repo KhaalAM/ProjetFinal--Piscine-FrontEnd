@@ -19,16 +19,16 @@ import { PlanningComponent } from './planning/planning.component';
 
 const routes: Routes = [
 
-{path:'planning',component:PlanningComponent},
-{path: '',component:TableauDeBordComponent },
-{path:'contact',component:ContactComponent},
-{path:'horaire',component:HorairesComponent},
-{path:'ficheInscriptionClient',component:FicheInscriptionClientComponent},
+{path: "planning", component: PlanningComponent},
+{path: "", component: TableauDeBordComponent},
+{path: "contact", component: ContactComponent},
+{path: "horaire", component: HorairesComponent},
+{path: "ficheInscriptionClient", component: FicheInscriptionClientComponent},
 {path: "login", component: LoginComponent},
-{path:'activites',component:ActivitesComponent},
-{path: "affichageListeActiviteMemeNom/:nomActivite", component:SelectActiviteComponent},
-{path: "descriptionActivite/:idActivite", component:ActiviteComponent},
-{path:'inscriptionActivite/:idActivite',component:InscriptionActiviteComponent},
+{path: "activites", component: ActivitesComponent},
+{path: "affichageListeActiviteMemeNom/:nomActivite", component: SelectActiviteComponent},
+{path: "descriptionActivite/:idActivite", component: ActiviteComponent},
+{path: "inscriptionActivite/:idActivite", component: InscriptionActiviteComponent},
 {path: "paiementActivite/:idActivite", component : PaiementActiviteComponent},
 {path: "**", component: PageNotFoundComponent} //url qui n'existe pas, A METTRE EN DERNIER
 

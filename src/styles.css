@@ -1,13 +1,10 @@
 html,body{height: 100%;}
 body{
-
-margin: 0;
-font-family: "poppins",sans-serif;
-/*font-size: 0.875rem;*/
-font-weight: 100;
-line-height: 1.5;
-text-align: left;
-background-image:url("src/assets/images/eau.PNG")
-
-
+  margin: 0;
+  font-family: "poppins",sans-serif;
+  /*font-size: 0.875rem;*/
+  font-weight: 100;
+  line-height: 1.5;
+  text-align: left;
+  background-image:url("src/assets/images/eau.PNG")
 }

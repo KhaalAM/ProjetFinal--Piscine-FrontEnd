@@ -18,24 +18,18 @@ export class InscriptionActiviteComponent implements OnInit {
   idPersonne!: string;
   personne$!: Observable<Personne>;
 
-
   constructor(private activiteService:ActiviteService, private personneService:PersonneService, private router:Router, private activatedRoute : ActivatedRoute) {
     this.idActivite = activatedRoute.snapshot.params['idActivite']
     console.log("idActivité : " + this.idActivite)
     this.idPersonne = activatedRoute.snapshot.params['idPersonne']
     console.log("idPersonne : " + this.idPersonne)
-   }
+  }
 
   ngOnInit(): void {
     this.activite$=this.activiteService.getActiviteById(this.idActivite);
   }
 
-  
-
   paiementActivite(idActivite:number):void{
-    
     this.router.navigateByUrl("/paiementActivite/" + this.idActivite)
-
   }
-
 }
