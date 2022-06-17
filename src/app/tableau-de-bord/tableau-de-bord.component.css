@@ -1,3 +1,12 @@
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+
+
+
 #row{
   background-image:url("src/assets/images/pexelsPiscine.jpg");
   background-size: 100%;
@@ -70,7 +79,7 @@ footer{
   margin-top: 10px;
   bottom: 10px;
  
-  background: linear-gradient(rgb(225,150,58),rgb(227,144,91));
+  background: linear-gradient(rgb(58, 105, 225),rgb(58, 105, 225));
   transition:.6s;
   
   transform: rotatex(65deg) translatey(-100px) translatez(-100px);
@@ -123,5 +132,7 @@ h3{
   width:180px;
   height:150px;
 }
+
+
 
 

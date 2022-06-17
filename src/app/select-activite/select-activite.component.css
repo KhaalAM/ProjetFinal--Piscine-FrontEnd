@@ -1,13 +1,13 @@
 block {
     display: flex;
     justify-content: center;
-    
+ 
   }
   
 
 
   .table {
-   
+ 
     width: 500px;
     height: auto;
     border-radius: 30px;
