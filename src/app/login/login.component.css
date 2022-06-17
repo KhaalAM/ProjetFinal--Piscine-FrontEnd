@@ -1,6 +1,7 @@
 .block {
-  float: right;
-  margin-right: 400px;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .login {
@@ -16,34 +17,6 @@
   border: solid black 3px;
 }
 
-.login-profile-img {
-  height: 100%;
-}
-
-.login-description-bk {
-  background-image: linear-gradient(0deg, #3f5efb, #9dddd6);
-  border-radius: 30px;
-  position: absolute;
-  top: 55%;
-  left: -5px;
-  right: 100px;
-  height: 65%;
-  width: 108%;
-  transform: skew(19deg, -9deg);
-}
-
-
-.login-logo img {
-  height: 100%;
-}
-
-.login-description {
-  position: absolute;
-  color: #fff;
-  font-weight: 900;
-  left: 150px;
-  bottom: 26%;
-}
 
 .login-btn {
   position: absolute;
@@ -51,39 +24,11 @@
   right: 30px;
   bottom: 10%;
   padding: 10px 20px;
+  border-radius: 5px;
   border: 1px solid #fff;
 }
 
-.login-btn a {
-  color: #fff;
-}
 
-.login-date {
-  position: absolute;
-  color: #fff;
-  left: 30px;
-  bottom: 10%;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  background-color: #eee;
-  min-height: 100vh;
-  float: right;
-}
-
-.btn i:before {
-  width: 14px;
-  height: 14px;
-  position: fixed;
-  color: #fff;
-  background: #0077B5;
-  padding: 10px;
-  border-radius: 50%;
-  top: 5px;
-  right: 5px;
-}
 
 .form-group{
   margin-top: 50px;
