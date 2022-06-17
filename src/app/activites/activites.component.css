@@ -34,3 +34,10 @@ img {
 .card-text {
   font-size:17px;
 }
+
+button {
+  margin-bottom: 10px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 18px;
+}
