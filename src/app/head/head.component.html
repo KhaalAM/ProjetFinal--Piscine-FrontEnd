@@ -1,10 +1,10 @@
 <nav id="navbar" class="navbar navbar-light" [ngStyle]="{backgroundImage:'url(assets/images/eau.PNG)'}">
 
   <a role="button" class="btn btn-primary me-md-2" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-    <button class="btn btn-primary me-md-2" type="button" mat-button (click)="inputSideNav.toggle()">Menu </button>
+    <button class="btn btn-outline-info me-md-2"  type="button" mat-button (click)="inputSideNav.toggle()">MENU</button>
 
     <!--Bouton redirigeant vers la fiche d'inscription-->
-    <button (click)="retour()" id="retour" class="btn btn-primary me-md-2" type="button">Retour</button>
+    <!-- <button (click)="retour()" id="retour" class="btn btn-primary me-md-2" type="button">Retour</button> -->
     <button id="seConnecter"  class="btn btn-primary me-md-2" mat-list-item routerLink="/login" type="button">Se Connecter</button>
     <button id="inscription"  class="btn btn-primary me-md-2" mat-list-item routerLink="/ficheInscriptionClient" type="button">S'inscrire</button>
   </a>
