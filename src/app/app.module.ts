@@ -1,15 +1,13 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule, } from '@angular/platform-browser';
-import {MatSidenavModule} from '@angular/material/sidenav'
-import {HttpClientModule} from '@angular/common/http';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MaterialExampleModule } from 'src/material.module';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
 import { ActivitesComponent } from './activites/activites.component';
 import { ContactComponent } from './contact/contact.component';
 import { HorairesComponent } from './horaires/horaires.component';
@@ -24,16 +22,9 @@ import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.compon
 import { PlanningComponent } from './planning/planning.component';
 import { CalendarModule } from 'angular-calendar';
 import { DayPilotModule } from '@daypilot/daypilot-lite-angular';
-
 import { PaiementActiviteComponent } from './paiement-activite/paiement-activite.component';
 import { ActiviteComponent } from './activite/activite.component';
 import { SelectActiviteComponent } from './select-activite/select-activite.component';
-
-
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -41,24 +32,19 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     ActivitesComponent,
     ContactComponent,
     HorairesComponent,
-
     FicheInscriptionClientComponent,
     HeadComponent,
     MenuComponent,
     TableauDeBordComponent,
     PlanningComponent,
-    
-   
-    
     LoginComponent,
     PageNotFoundComponent,
     InscriptionActiviteComponent,
     PaiementActiviteComponent,
     ActiviteComponent,
     SelectActiviteComponent
-
-
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -72,11 +58,6 @@ import { SelectActiviteComponent } from './select-activite/select-activite.compo
     MatSliderModule,
     CalendarModule,
     DayPilotModule
-    
-
-
-
-
   ],
 
   providers: [],

@@ -1,8 +1,10 @@
 .container {
   float: right;
   padding-top: 2%;
+}
 
-
+.decale{
+  margin-left: 300px;
 }
 
 .centre {
@@ -20,14 +22,15 @@ img {
 
 .activites {
   justify-content: space-evenly;
-  align-items: center;
   width: 85%;
   display: inline-flexbox;
   flex-wrap: wrap;
   align-content: flex-start;
   height: fit-content;
+  margin-left: auto;
+  margin-right: auto
 }
 
-.card-text{
+.card-text {
   font-size:17px;
 }

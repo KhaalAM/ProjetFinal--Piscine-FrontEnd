@@ -1,6 +1,5 @@
-<head></head>
-
-<br><div class="row row-cols-1 row-cols-md-3 g-4 activites d-flex align-items-stretch">
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4 activites d-flex align-items-stretch">
 
   <div *ngFor="let nomActivite of listeNomActivites$ | async" class="col">
     <div class="card h-100 container" style="background-color:rgb(209, 233, 253)">
@@ -16,19 +15,14 @@
         <p *ngIf="nomActivite==='Natation Maternite'" class="card-text">Si de nombreux sports sont déconseillés aux femmes enceintes, l'aquagym prénatale (aussi appelé cours de préparation à la naissance) en revanche présente un excellent moyen de se détendre et de préparer sereinement son accouchement.</p>
         <p *ngIf="nomActivite==='Aquafusion'" class="card-text">Comme la natation ou l’aquagym, l’aquafusion est un sport aquatique ultra-complet qui fait travailler toutes les parties de votre corps. Il présente cependant l’avantage d’être beaucoup plus tonique et plus ludique que l'aquagym.</p>
         <p *ngIf="nomActivite==='Waterpolo'" class="card-text">Un sport d’équipe, qui nécessite rapidité, adresse et endurance, pour lequel deux équipes de 7 joueurs s’opposent dans une piscine avec un ballon. Objectif : marquer plus de buts que les adversaires!</p>
-      </div>
 
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button type="button" class="btn-primary btn btn-sm" (click)="goListSameName(nomActivite)">Réserver</button><br>
+          <br><button type="button" class="btn-primary btn btn-sm" (click)="goListSameName(nomActivite)">Réserver</button>
             <!-- <button type="button" class="btn-info btn btn-sm" routerLink= "/infosNatation">Plus d'informations</button> -->
         </div>
+      </div>
     </div>
   </div>
-</div><br>
-
-
-
-
-
+<br>
 
 <router-outlet></router-outlet>

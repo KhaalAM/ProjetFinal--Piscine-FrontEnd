@@ -18,29 +18,33 @@ main {
   top: 50px;
   left: 140px;
 }
+
 .header{
   position: relative;
   top: 10px;
+  width: 90%;
+  margin-left: 150px;
 }
+
 header{
   grid-area:header;
 }
 
 .captions{
-color: blue;
-font-weight: bold;
+  color: blue;
+  font-weight: bold;
 }
 
 aside{
-grid-area:aside;
+  grid-area:aside;
 }
 
 article{
-grid-area:article;
+  grid-area:article;
 }
 
 footer{
-grid-area:footer;
+  grid-area:footer;
 
 }
 

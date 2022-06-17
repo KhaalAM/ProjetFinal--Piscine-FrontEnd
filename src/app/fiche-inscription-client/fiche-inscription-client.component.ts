@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class FicheInscriptionClientComponent implements OnInit {
 
- personneForm!:FormGroup
+  personneForm!:FormGroup
 
   constructor(private formBuilder:FormBuilder, private router:Router, private personneService:PersonneService) { }
 
@@ -29,11 +29,11 @@ export class FicheInscriptionClientComponent implements OnInit {
 
   onSave(){
     this.personneService.addPersonne(this.personneForm.value).subscribe()
-
     this.router.navigate(['']);
     alert("Vous avez bien été enregistré sur notre site!");
-
   }
 
-
+  alert(){
+    alert("Vous avez bien été enregistré");
+  }
 }
