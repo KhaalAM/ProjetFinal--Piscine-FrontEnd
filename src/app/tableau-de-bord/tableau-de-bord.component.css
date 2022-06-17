@@ -1,3 +1,12 @@
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+
+
+
 #row{
   background-image:url("src/assets/images/pexelsPiscine.jpg");
   background-size: 100%;
