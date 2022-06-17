@@ -8,15 +8,15 @@
     <form [formGroup]="personneForm" (ngSubmit)="onSave()" style="color: aliceblue;">
       <div class="mb-3">
         <label for="nom" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="nom" formControlName="nom">
+        <input type="text" class="form-control" id="nom" required minlength="3" maxlength="100" formControlName="nom">
       </div>
       <div class="mb-3">
         <label for="prenom" class="form-label">Prénom</label>
-        <input type="text" class="form-control" id="prenom" formControlName="prenom">
+        <input type="text" class="form-control" id="prenom" required minlength="3" maxlength="100" formControlName="prenom">
       </div>
       <div class="mb-3">
         <label for="username" class="form-label">Nom d'utilisateur</label>
-        <input type="text" class="form-control" id="username" formControlName="username">
+        <input type="text" class="form-control" id="username" required minlength="3" maxlength="100" formControlName="username">
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Mot de passe</label>
@@ -28,15 +28,15 @@
       </div>
       <div class="mb-3">
         <label for="adresse" class="form-label">Adresse</label>
-        <input type="text" class="form-control" id="adresse" formControlName="adresse">
+        <input type="text" class="form-control" id="adresse" required minlength="10" maxlength="150" formControlName="adresse">
       </div>
       <div class="mb-3">
         <label for="telephone" class="form-label">Numéro de téléphone</label>
-        <input type="text" class="form-control" id="telephone" formControlName="telephone">
+        <input type="text" class="form-control" id="telephone" required length="15" formControlName="telephone">
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Adresse mail</label>
-        <input type="email" class="form-control" id="email" formControlName="email">
+        <input type="email" class="form-control" id="email" required minlength="10" maxlength="150" formControlName="email">
       </div>
 
       <div class="login-btn">
