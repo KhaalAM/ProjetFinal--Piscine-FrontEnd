@@ -1,18 +1,21 @@
-<div class="sideNav"  style="background-color: #f7eeee">
+<div class="sideNav">
   <div class="logo"></div>
   <ul class="nav">
-    <aside class="menu">
+    
       <ul class="wrapper">
-        <li class="d-grid"><a class="button"  id="affichageButton" routerLink="/"><i class fas fa-chart-line></i><b>Accueil</b></a></li>
+        <li class="d-grid"><a class="button accueil"  id="affichageButton" routerLink="/"><i class fas fa-chart-line></i><b>Accueil</b></a></li>
+      </ul>  
+      <ul class="wrapper">         
           <li><a class="button" mat-list-item routerLink="/activites"><b>Activités proposées</b></a></li>
           <li><a class="button" mat-list-item routerLink="/horaire"><b>Horaires d'ouverture</b></a></li>
+          <li><a class="button" mat-list-item routerLink="/planning"><b>Planning</b></a></li>
       </ul>
       <p class="menu-label"></p>
 
-      <ul class="wrapper1">
-        <li><a class="button" mat-list-item routerLink="/contact"> <b>Contact</b></a></li>
-        <li><a class="button" mat-list-item routerLink="/planning"><b>Planning</b></a></li>
+
+      <ul class="wrapper_bottom">
+        <li><a class="button" mat-list-item routerLink="/contact"> <b>Contact</b></a></li>   
       </ul>
-    </aside>
+    
   </ul>
 </div>
