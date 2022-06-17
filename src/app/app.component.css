@@ -3,11 +3,17 @@
   height: auto;
 }
 
+
 .row {
   background-image: url("src/assets/images/pexelsPiscine.jpg");
   background-size: 100%;
-}
+} 
 
 #sideN {
-  width:300px;
+  width: 15%;
+  margin-left:-0.8%;
+  position: sticky;
+}
+.mat-drawer {
+  background-color: #fff0;
 }
